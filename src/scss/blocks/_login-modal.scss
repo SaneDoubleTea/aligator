@@ -1,0 +1,196 @@
+.login_modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        margin-right: 15px;
+    }
+
+    &-main {
+        width: 330px;
+        height: 470px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 50px 40px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    &-cross {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        background: #EDF0F3;
+        right: -23px;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+
+    &-input {
+        width: 100%;
+        border: 0.918909px solid #BFC7D2;
+        border-radius: 11.8145px;
+        height: 44px;
+        padding-bottom: 5px;
+        padding-left: 18px;
+        display: flex;
+        position: relative;
+        margin-bottom: 20px;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover {
+            border-color: #000;
+        }
+
+
+
+        input {
+            align-self: flex-end;
+            font-size: 14px;
+            line-height: 17px;
+            width: 100%;
+
+            &:focus {
+                +span {
+                    transform: translateY(0);
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #9BA1AA;
+                }
+            }
+        }
+
+        &-show,
+        &-hide {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            cursor: pointer;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #9BA1AA;
+            position: absolute;
+            bottom: 50%;
+            left: 18px;
+            transform: translateY(50%);
+            transition: all 0.1s;
+            pointer-events: none;
+
+            &.active {
+                transform: translateY(0);
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                color: #9BA1AA;
+            }
+
+        }
+
+    }
+
+    &-sign-in-btn {
+        width: 100%;
+        padding: 12px 0;
+        background: #30CA51;
+        border: 1px solid transparent;
+        border-radius: 11.8145px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+        transition: background 0.2s;
+
+        &:hover {
+            background-color: #fff;
+            color: #30CA51;
+            border: 1px solid #30CA51;
+        }
+    }
+
+    &-create-btn {
+        background: #BFC7D222;
+        width: 100%;
+        padding: 12px 0;
+        border-radius: 11.8145px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 30px;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #BFC7D2;
+            color: #fff;
+        }
+    }
+
+    &-sign-with {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #72777D;
+        margin-bottom: 10px;
+    }
+
+    &-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    &-item-icon {
+        width: 42.32px;
+        height: 38px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.793603px solid #9BA1AA;
+        border-radius: 10.2035px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+
+        }
+
+        &:hover {
+            background: #30CA51;
+            border-color: #30CA51;
+
+            svg {
+                path {
+                    stroke: #fff;
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}

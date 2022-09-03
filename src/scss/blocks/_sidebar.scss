@@ -1,0 +1,757 @@
+.sidebar {
+   background: #f9f9f9;
+   border-radius: 20px;
+   max-width: 275px;
+   width: 100%;
+   padding: 21px 21px 20px 18px;
+   height: 100%;
+
+   .sidebar-title {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 1.17;
+      color: $dark;
+      display: inline-block;
+   }
+
+
+
+   .sidebar-name {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #72777d;
+      display: inline-block;
+      cursor: pointer;
+   }
+
+   &__filter-btn {
+      background-color: transparent;
+      margin-right: 16px;
+   }
+
+   &__delivery {
+      display: none;
+   }
+
+   &__buttons {
+      display: none;
+   }
+
+   &__title {
+      display: none;
+   }
+
+   .show-all {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #30ca51;
+      background: transparent;
+      position: relative;
+      padding-right: 15px;
+      margin-top: 10px;
+
+      &::after {
+         content: "";
+         position: absolute;
+         background-image: url("../../img/icons/arrow-down.svg");
+         background-size: contain;
+         background-repeat: no-repeat;
+         width: 8px;
+         height: 5px;
+         right: 0;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+   }
+
+   .sidebar-label {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+   }
+
+   .sidebar__os-list,
+   .sidebar__display-list,
+   .sidebar__camera-amount-list-box,
+   .sidebar__direction-list,
+   .sidebar__manufacturer-list,
+   .sidebar__resolution-list,
+   .sidebar__refreshrate-list,
+   .sidebar__memory-list,
+   .sidebar__battery-list,
+   .sidebar__version-bluetooth-list,
+   .sidebar__interface-list {
+      .sidebar-label-search {
+         transform: translateX(175px);
+         z-index: 6;
+      }
+   }
+
+   &__label-box {
+      display: inline-block;
+   }
+
+   &__price {
+      margin-bottom: 23px;
+      max-width: 233px;
+   }
+
+   &__price-title {
+      margin-bottom: 10px;
+   }
+
+   &__box {
+      display: flex;
+   }
+
+   &__input {
+      padding: 11px 12px 11px 10px;
+      border: 0.7px solid #bfc7d2;
+      border-radius: 9px;
+      width: 112px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+
+      &::placeholder {
+         font-size: 15px;
+         line-height: 18px;
+         color: #bfc7d2;
+         font-weight: 400;
+      }
+
+      +.sidebar__input {
+         margin-left: 8px;
+      }
+   }
+
+   &__manufacturer {
+      margin-bottom: 20px;
+
+      &-item {
+         position: relative;
+
+         .sidebar-label-search {
+            transform: translateX(20px);
+         }
+      }
+   }
+
+   &__manufacturer-title {
+      margin-bottom: 8px;
+   }
+
+   &__direction {
+      margin-bottom: 24px;
+
+      &-item {
+         position: relative;
+
+         .sidebar-label-search {
+            transform: translateX(50px);
+         }
+      }
+   }
+
+   &__direction-title {
+      margin-bottom: 9px;
+   }
+
+   &__case-color {
+      margin-bottom: 39px;
+      width: 210px;
+   }
+
+   &__case-color-title {
+      margin-bottom: 14px;
+   }
+
+   &__case-color-list {
+      display: flex;
+      gap: 10px 9px;
+      flex-wrap: wrap;
+   }
+
+   &__case-color-item {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      // border: 2px solid transparent;
+      transition: all 0.3s;
+
+      &--active {
+         border: 2px solid #30ca51;
+      }
+
+      &:hover {
+         transform: scale(1.15);
+      }
+   }
+
+   &__display {
+      margin-bottom: 18px;
+   }
+
+   &__display-title {
+      margin-bottom: 9px;
+   }
+
+   &__os-title {
+      margin-bottom: 5px;
+   }
+
+   &__resolution {
+      margin-bottom: 27px;
+      width: 170px;
+   }
+
+   &__resolution-title {
+      margin-bottom: 14px;
+   }
+
+   &__refreshrate {
+      margin-bottom: 25px;
+   }
+
+   &__refreshrate-title {
+      margin-bottom: 14px;
+      max-width: 166px;
+   }
+
+   &__ram {
+      margin-bottom: 32px;
+   }
+
+   &__ram-title {
+      margin-bottom: 6px;
+   }
+
+   &__ram-list {
+      height: 246px;
+      overflow-y: scroll;
+   }
+
+   &__memory {
+      margin-bottom: 25px;
+   }
+
+   &__memory-title {
+      margin-bottom: 4px;
+   }
+
+   &__interface {
+      margin-bottom: 26px;
+   }
+
+   &__interface-title,
+   &__camera-amount-title,
+   &__battery-title,
+   &__version-bluetooth-title {
+      margin-bottom: 6px;
+   }
+
+   &__camera-amount-list {
+      display: flex;
+      flex-direction: column;
+      column-gap: 26px;
+
+      >div {
+         display: flex;
+
+         >.sidebar__camera-amount-item {
+            &:not(:last-child) {
+               width: 60px;
+            }
+         }
+      }
+   }
+
+   &__camera-amount {
+      margin-bottom: 30px;
+   }
+
+   &__battery {
+      margin-bottom: 33px;
+   }
+
+   &__camera-resolution,
+   &__os {
+      margin-bottom: 29px;
+   }
+
+   &__camera-resolution-title {
+      margin-bottom: 16px;
+   }
+
+   &__camera-resolution-input {
+      width: 120px;
+   }
+
+
+   &__version-bluetooth-item-box {
+      display: flex;
+      column-gap: 13px;
+   }
+
+   &__version-bluetooth-item,
+   &__direction-item {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.sidebar__ram-list {
+   position: relative;
+}
+
+
+.sidebar-label-search {
+   position: absolute;
+   width: 118px;
+   padding: 2px 17px;
+   left: 90px;
+   top: 0;
+   background: #9ba1aa;
+   border-radius: 10px;
+   // z-index: 1;
+   opacity: 0;
+   display: none;
+
+   &.active {
+      display: block !important;
+      opacity: 1 !important;
+   }
+
+
+
+
+   &::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 10px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 10px 5px 0;
+      border-color: transparent #9ba1aa transparent transparent;
+      line-height: 0px;
+      _border-color: #000000 #9ba1aa #000000 #000000;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.6;
+      color: #fff;
+   }
+
+   &__num {
+      color: inherit;
+      text-decoration: underline;
+   }
+}
+
+.sidebar__ram-list::-webkit-scrollbar {
+   background: rgba(191, 199, 210, 0.2);
+   width: 4px;
+   border-radius: 10px;
+}
+
+.sidebar__ram-list::-webkit-scrollbar-thumb {
+   background: #bfc7d2;
+   border-radius: 10px;
+   width: 4px;
+}
+
+.case-color {
+   &__light-grey {
+      background: #d9d9d9;
+   }
+
+   &__brown {
+      background: #ded3b9;
+   }
+
+   &__white {
+      background: #f7f7f7;
+   }
+
+   &__black {
+      background: #000000;
+   }
+
+   &__grey {
+      background: #a0a0a0;
+   }
+
+   &__purple {
+      background: #7366d5;
+   }
+
+   &__blue {
+      background: #168af5;
+   }
+
+   &__pink {
+      background: #f0c6ff;
+   }
+
+   &__yellow {
+      background: linear-gradient(136.7deg, #ffd78a 15.64%, #ac8750 111.1%);
+   }
+
+   &__grey-gradient {
+      background: linear-gradient(136.7deg, #f7f7f7 15.64%, #858585 111.1%);
+   }
+
+   &__green {
+      background: #5ad192;
+   }
+
+   &__red {
+      background: #e36c6c;
+   }
+}
+
+@keyframes opacity {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+@media (max-width: 990px) {
+   .sidebar {
+      display: none;
+   }
+
+   .sidebar {
+      &__buttons {
+         padding: 0 12px;
+         margin-top: 11px;
+      }
+
+      &__btn {
+         background-color: $accent;
+         padding: 13px 37px;
+         font-weight: 600;
+         font-size: 17px;
+         line-height: 1.2;
+         color: #fff;
+         border-radius: 10px;
+         margin-right: 12px;
+      }
+
+      &__clear {
+         background: #f6f7f9;
+         border-radius: 10px;
+         font-weight: 600;
+         font-size: 17px;
+         line-height: 1.2;
+         color: $dark;
+         padding: 13px 27px;
+
+         span {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #fff;
+            background-color: $accent;
+            padding: 3px 7px;
+            border-radius: 6px;
+            margin-left: 9px;
+         }
+      }
+   }
+
+   .sidebar--active {
+      display: block;
+      position: absolute;
+      max-width: 990px;
+      height: 100vh;
+      z-index: 3;
+      border-radius: 10px;
+      top: 79px;
+      left: 0;
+      background-color: #fff;
+      padding: 0 0 8px;
+      padding-bottom: 60px;
+      overflow-y: scroll;
+
+      padding-bottom: 100px;
+      .sidebar__delivery {
+         display: block;
+      }
+
+      .sidebar__box-title {
+         padding-left: 18px;
+         border-bottom: 0.7px solid rgba(191, 199, 210, 0.7);
+         position: sticky;
+         top: 0;
+         left: 0;
+         right: 0;
+         background-color: #fff;
+         z-index: 2;
+      }
+
+      .sidebar-label-search {
+         display: none !important;
+      }
+
+
+      .sidebar__item--active {
+
+         .sidebar__price-box,
+         .sidebar__direction-list,
+         .sidebar__manufacturer-list,
+         .sidebar__display-list,
+         .sidebar__os-list,
+         .sidebar__resolution-list,
+         .sidebar__refreshrate-list,
+         .sidebar__ram-list,
+         .sidebar__memory-list,
+         .sidebar__interface-list,
+         .sidebar__camera-amount-list,
+         .sidebar__camera-resolution-box,
+         .sidebar__battery-list,
+         .sidebar__version-bluetooth-list {
+            display: block;
+            animation: opacity 0.5s forwards;
+         }
+
+         .sidebar__case-color-list {
+            display: flex;
+            animation: opacity 0.5s forwards;
+         }
+
+         .sidebar-title {
+            margin-bottom: 15px;
+
+            &::after {
+               content: "";
+               transform: rotate(180deg);
+               top: 0;
+            }
+         }
+
+         .sidebar__display-box,
+         .sidebar__os-box,
+         .sidebar__memory-box,
+         .sidebar__camera-resolution-box-title {
+            &::after {
+               content: "";
+               transform: rotate(180deg);
+               top: 0;
+            }
+         }
+      }
+
+      .sidebar__title {
+         display: block;
+         padding: 20px 0;
+         position: relative;
+         font-weight: 600;
+         font-size: 25px;
+         line-height: 1.2;
+         letter-spacing: 0.01em;
+         color: $dark;
+      }
+
+      .sidebar__delivery-label {
+         border: 1px solid #bfc7d2;
+         border-radius: 50px;
+         width: 52px;
+         height: 29px;
+         padding: 3px 4px;
+         position: relative;
+      }
+
+      .sidebar__delivery-checkbox {
+         width: 23px;
+         height: 23px;
+         background-color: #bfc7d2;
+         border-radius: 30px;
+         position: absolute;
+         transition: all 0.3s;
+      }
+
+      .delivery-checkbox:checked+.sidebar__delivery-checkbox {
+         transform: translateX(20px);
+         transition: all 0.3s;
+         background-color: $accent;
+      }
+
+      .sidebar__delivery-label--active {
+         border: 1px solid $accent;
+      }
+
+      .sidebar__delivery {
+         padding: 20px;
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 0.7px solid rgba(191, 199, 210, 0.7);
+      }
+
+      .sidebar__delivery-title {
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 1.2;
+         color: $dark;
+      }
+
+      .sidebar__price,
+      .sidebar__manufacturer,
+      .sidebar__direction,
+      .sidebar__case-color,
+      .sidebar__display,
+      .sidebar__os,
+      .sidebar__resolution,
+      .sidebar__refreshrate,
+      .sidebar__ram,
+      .sidebar__memory,
+      .sidebar__interface,
+      .sidebar__camera-amount,
+      .sidebar__camera-resolution,
+      .sidebar__battery,
+      .sidebar__version-bluetooth {
+         max-width: 100%;
+         width: 100%;
+         padding: 13px 16px;
+         border-bottom: 0.7px solid rgba(191, 199, 210, 0.7);
+         margin-bottom: 0;
+      }
+
+      .sidebar__price-title,
+      .sidebar__manufacturer-title,
+      .sidebar__direction-title,
+      .sidebar__case-color-title,
+      .sidebar__display-title,
+      .sidebar__resolution-title,
+      .sidebar__refreshrate-title,
+      .sidebar__ram-title,
+      .sidebar__memory-title,
+      .sidebar__interface-title,
+      .sidebar__camera-amount-title,
+      .sidebar__camera-resolution-title,
+      .sidebar__battery-title,
+      .sidebar__version-bluetooth-title {
+         margin-bottom: 0;
+      }
+
+      .sidebar__price-box,
+      .sidebar__direction-list,
+      .sidebar__manufacturer-list,
+      .sidebar__case-color-list,
+      .sidebar__display-list,
+      .sidebar__os-list,
+      .sidebar__resolution-list,
+      .sidebar__refreshrate-list,
+      .sidebar__ram-list,
+      .sidebar__memory-list,
+      .sidebar__interface-list,
+      .sidebar__camera-amount-list,
+      .sidebar__camera-resolution-box,
+      .sidebar__battery-list,
+      .sidebar__version-bluetooth-list {
+         display: none;
+      }
+
+      .sidebar-title {
+         width: 100%;
+         position: relative;
+
+         &::after {
+            content: "";
+            background-image: url(../../img/icons/arrow-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 10px;
+            height: 15px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+
+      .sidebar__display-title.sidebar-title {
+         max-width: 70px;
+
+         &::after {
+            display: none;
+         }
+      }
+
+      .sidebar__os-title.sidebar-title {
+         max-width: 190px;
+
+         &::after {
+            display: none;
+         }
+      }
+
+      .sidebar__display-box,
+      .sidebar__os-box,
+      .sidebar__memory-box,
+      .sidebar__camera-resolution-box-title {
+         width: 100%;
+         position: relative;
+
+         &::after {
+            content: "";
+            background-image: url(../../img/icons/arrow-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 10px;
+            height: 15px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+
+      .sidebar__refreshrate-title {
+         max-width: 100%;
+      }
+
+      .sidebar__memory-title.sidebar-title {
+         max-width: 157px;
+
+         &::after {
+            display: none;
+         }
+      }
+
+      .sidebar__camera-resolution-title {
+         &::after {
+            display: none;
+         }
+      }
+
+      .sidebar__buttons {
+         display: block;
+      }
+   }
+}
+
+@media (max-width: 420px) {
+   .sidebar__camera-resolution-title {
+      max-width: 270px;
+   }
+}
+
+@media (max-width: 375px) {
+   .sidebar__clear {
+      margin-left: 0;
+      margin-top: 10px;
+   }
+}

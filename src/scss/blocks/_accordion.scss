@@ -1,0 +1,23 @@
+.ac {
+
+    // Panel class
+    .ac-panel {
+        overflow: hidden;
+        transition-property: height, visibility;
+        transition-timing-function: ease;
+    }
+
+    // Hide content when Javascript is enabled
+    &.js-enabled {
+        .ac-panel {
+            visibility: hidden;
+        }
+    }
+
+    // Active class
+    &.is-active {
+        .ac-panel {
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,2694 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<body>
+	@@include("html/head.html", { "title":"Страница товара" })
+	@@include("html/header.html")
+	@@include("html/item-view-modal.html")
+	@@include("html/fav_compare_pop-up.html")
+	@@include("html/compare_pop-up-window.html")
+	@@include("html/login_modal.html")
+	@@include("html/history-popup.html")
+	<main>
+		<section class="breadcrumbs">
+			<div class="container">
+				<button class="breadcrumbs__btn" onclick="javascript:history.back()">
+					<img src="@img/icons/arrow-left.svg" alt="">
+				</button>
+				<ul class="breadcrumbs__list">
+
+					<li class="breadcrumbs__item">
+						<a href="#">
+							Каталог
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">
+							Мобильные и связь
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">
+							Мобильные и аксессуары
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">
+							Мобильные телефоны
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">
+							Xiaomi
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="item-view">
+			<div class="container">
+				<h2 class="item-view__title">Смартфон Xiaomi Redmi 9A 256ГБ</h2>
+				<div class="item-view__inner">
+					<button class="item-view__filter-btn item-view-filter-btn">
+
+						<p><img class="item-view__filter-back" src="@img/icons/arrow-left.svg" alt=""> Фильтры
+						</p>
+					</button>
+
+					<aside class="item-view__filters filters">
+
+						<div class="filters-overflow">
+
+							<div class="filters__item filters__options">
+								<div class="filters__item-box">
+									<p class="filters__item-title filters__item-title-options ">Фильтр по параметрам</p>
+									<button class="filters__item-plus-btn filters__item-plus-btn-options"><img
+											src="@img/icons/plus.svg" alt="plus-icon"></button>
+								</div>
+								<ul class="filters__list filters__list-options">
+
+								</ul>
+							</div>
+
+							<div class="filters__item filters__models">
+								<div class="filters__item-box">
+									<p class="filters__item-title filters__item-title-models">Модели</p>
+									<button class="filters__item-plus-btn"><img src="@img/icons/plus.svg"
+											alt="plus-icon"></button>
+								</div>
+								<ul class="filters__list filters__list-models ">
+									<li class="filters__list-item">
+										<img src="@img/item-view/1.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 9AT <span
+													class="filters__list-new new">New</span></a>
+											<p class="filters__list-price">от 12 600 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item">
+										<img src="@img/item-view/2.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 10A </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item">
+										<img src="@img/item-view/3.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 11 <span
+													class="filters__list-new new">New</span></a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item">
+										<img src="@img/item-view/4.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 10 Prime </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item">
+										<img src="@img/item-view/5.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 9A </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item hidden">
+										<img src="@img/item-view/1.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 9AT <span
+													class="filters__list-new new">New</span></a>
+											<p class="filters__list-price">от 12 600 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item hidden">
+										<img src="@img/item-view/2.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 10A </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item hidden">
+										<img src="@img/item-view/3.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 11 <span
+													class="filters__list-new new">New</span></a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item hidden">
+										<img src="@img/item-view/4.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 10 Prime </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+									<li class="filters__list-item hidden">
+										<img src="@img/item-view/5.png" alt="photo">
+										<div class="filters__list-box">
+											<a href="#" class="filters__list-name">Redmi 9A </a>
+											<p class="filters__list-price">от 36 200 ₸</p>
+										</div>
+									</li>
+								</ul>
+
+								<button class="filters__item-btn filters__item-btn-models">Еще 7</button>
+
+							</div>
+
+							<div class="filters__item filters__brands">
+								<div class="filters__item-box">
+									<p class="filters__item-title filters__item-title-brands">Бренды</p>
+									<button class="filters__item-plus-btn"><img src="@img/icons/plus.svg"
+											alt="plus-icon"></button>
+								</div>
+								<ul class="filters__list-brands filters__list ">
+									<div class="filters__list-brands-list">
+										<li class="filters__item-brands">Xiaomi</li>
+										<li class="filters__item-brands">Samsung</li>
+										<li class="filters__item-brands">Apple</li>
+										<li class="filters__item-brands">Huawei</li>
+										<li class="filters__item-brands">Vivo</li>
+										<li class="filters__item-brands">ASUS</li>
+									</div>
+									<div class="filters__list-brands-list">
+										<li class="filters__item-brands">Elephone</li>
+										<li class="filters__item-brands">Google</li>
+										<li class="filters__item-brands">Leagoo</li>
+										<li class="filters__item-brands">OPPO</li>
+										<li class="filters__item-brands">Poco</li>
+										<li class="filters__item-brands">Ericsson</li>
+									</div>
+									<div class="filters__list-brands-list hidden">
+										<li class="filters__item-brands">Xiaomi</li>
+										<li class="filters__item-brands">Samsung</li>
+										<li class="filters__item-brands">Apple</li>
+										<li class="filters__item-brands">Huawei</li>
+										<li class="filters__item-brands">Vivo</li>
+										<li class="filters__item-brands">ASUS</li>
+									</div>
+									<div class="filters__list-brands-list hidden">
+										<li class="filters__item-brands">Elephone</li>
+										<li class="filters__item-brands">Google</li>
+										<li class="filters__item-brands">Leagoo</li>
+										<li class="filters__item-brands">OPPO</li>
+										<li class="filters__item-brands">Poco</li>
+										<li class="filters__item-brands">Ericsson</li>
+									</div>
+									<div class="filters__list-brands-list hidden">
+										<li class="filters__item-brands">Xiaomi</li>
+										<li class="filters__item-brands">Samsung</li>
+										<li class="filters__item-brands">Apple</li>
+										<li class="filters__item-brands">Huawei</li>
+										<li class="filters__item-brands">Vivo</li>
+										<li class="filters__item-brands">ASUS</li>
+									</div>
+									<div class="filters__list-brands-list hidden">
+										<li class="filters__item-brands">Elephone</li>
+										<li class="filters__item-brands">Google</li>
+										<li class="filters__item-brands">Leagoo</li>
+										<li class="filters__item-brands">OPPO</li>
+										<li class="filters__item-brands">Poco</li>
+										<li class="filters__item-brands">Ericsson</li>
+									</div>
+								</ul>
+								<button class="filters__item-btn filters__item-btn-brands">Показать все</button>
+							</div>
+							<div class="filters__buttons">
+								<button class="filters__btn" type="submit">Применить</button>
+								<button class="filters__clear" type="submit">
+									Очистить
+									<span>2</span>
+								</button>
+							</div>
+						</div>
+					</aside>
+
+					<div class="item-view__content">
+
+						<div class="item-view__tabs">
+							<button class="item-view__tab item-view__tab--active"
+								data-tab-name="where-tab">Где&nbsp;купить</button>
+							<button class="item-view__tab" data-tab-name="descr-tab">Описание </button>
+							<button class="item-view__tab" data-tab-name="characteristic-tab">Характеристики </button>
+							<button class="item-view__tab" data-tab-name="reviews-tab"> Отзывы</button>
+						</div>
+
+						<div class="item-view__users-box">
+							<div class="item-view__users-nav">
+
+								<button class="item-view__compare">В сравнение <span>3</span></button>
+								<div class="item-view__label">
+									<p>Добавлено к сравнению</p>
+									<a class="item-view__label-link" href="#"
+										data-micromodal-trigger="compare-window">Показать</a>
+								</div>
+								<button class="item-view__like">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10 16.75C10 16.75 1 11.8158 1 5.89465C1 -0.0264832 8 -0.519908 10 4.1128C12 -0.519908 19 -0.0264832 19 5.89465C19 11.8158 10 16.75 10 16.75Z"
+											fill="#fff" />
+										<path
+											d="M10 16.75L9.51926 17.6269C9.81873 17.791 10.1813 17.791 10.4807 17.6269L10 16.75ZM10 4.1128L9.0819 4.50915C9.24007 4.87553 9.60093 5.1128 10 5.1128C10.3991 5.1128 10.7599 4.87553 10.9181 4.50915L10 4.1128ZM0 5.89465C0 9.32753 2.56875 12.3017 4.84056 14.2945C6.00977 15.3201 7.17425 16.1496 8.04413 16.7219C8.48006 17.0087 8.84449 17.2325 9.1018 17.3857C9.23051 17.4623 9.33259 17.5214 9.40361 17.5619C9.43912 17.5821 9.46688 17.5977 9.48634 17.6086C9.49607 17.614 9.50372 17.6183 9.50923 17.6213C9.51198 17.6229 9.5142 17.6241 9.51588 17.625C9.51672 17.6255 9.51742 17.6259 9.51798 17.6262C9.51826 17.6263 9.51858 17.6265 9.51873 17.6266C9.51901 17.6267 9.51926 17.6269 10 16.75C10.4807 15.8731 10.4809 15.8732 10.4811 15.8733C10.4811 15.8733 10.4812 15.8734 10.4812 15.8734C10.4812 15.8734 10.4811 15.8733 10.4808 15.8732C10.4803 15.8729 10.4793 15.8723 10.4777 15.8715C10.4746 15.8697 10.4693 15.8668 10.462 15.8627C10.4474 15.8546 10.4246 15.8418 10.3942 15.8244C10.3334 15.7898 10.2421 15.737 10.1248 15.6671C9.88989 15.5273 9.55119 15.3194 9.14337 15.0511C8.32575 14.5132 7.24023 13.7391 6.15944 12.791C3.93125 10.8364 2 8.38289 2 5.89465H0ZM10.9181 3.71644C9.7324 0.969938 7.03801 -0.289392 4.60921 0.0559937C3.38892 0.229525 2.22301 0.810289 1.36397 1.81807C0.501314 2.83008 0 4.21094 0 5.89465H2C2 4.61779 2.37369 3.71655 2.88603 3.1155C3.40199 2.51021 4.11108 2.14695 4.89079 2.03607C6.46199 1.81264 8.2676 2.62295 9.0819 4.50915L10.9181 3.71644ZM18 5.89465C18 8.38289 16.0688 10.8364 13.8406 12.791C12.7598 13.7391 11.6742 14.5132 10.8566 15.0511C10.4488 15.3194 10.1101 15.5273 9.87523 15.6671C9.75785 15.737 9.66657 15.7898 9.60575 15.8244C9.57535 15.8418 9.55258 15.8546 9.53797 15.8627C9.53067 15.8668 9.52542 15.8697 9.52228 15.8715C9.52071 15.8723 9.51966 15.8729 9.51916 15.8732C9.5189 15.8733 9.51879 15.8734 9.5188 15.8734C9.51881 15.8734 9.51893 15.8733 9.51893 15.8733C9.51908 15.8732 9.51926 15.8731 10 16.75C10.4807 17.6269 10.481 17.6267 10.4813 17.6266C10.4814 17.6265 10.4817 17.6263 10.482 17.6262C10.4826 17.6259 10.4833 17.6255 10.4841 17.625C10.4858 17.6241 10.488 17.6229 10.4908 17.6213C10.4963 17.6183 10.5039 17.614 10.5137 17.6086C10.5331 17.5977 10.5609 17.5821 10.5964 17.5619C10.6674 17.5214 10.7695 17.4623 10.8982 17.3857C11.1555 17.2325 11.5199 17.0087 11.9559 16.7219C12.8258 16.1496 13.9902 15.3201 15.1594 14.2945C17.4312 12.3017 20 9.32753 20 5.89465H18ZM10.9181 4.50915C11.7324 2.62295 13.538 1.81264 15.1092 2.03607C15.8889 2.14695 16.598 2.51021 17.114 3.1155C17.6263 3.71655 18 4.61779 18 5.89465H20C20 4.21094 19.4987 2.83008 18.636 1.81807C17.777 0.810289 16.6111 0.229525 15.3908 0.0559937C12.962 -0.289392 10.2676 0.969938 9.0819 3.71644L10.9181 4.50915Z"
+											fill="#9BA1AA" />
+									</svg>
+
+									В избранное</button>
+
+							</div>
+						</div>
+
+						<div class="item-view__content-box">
+							<div class="item-view__content-gallery">
+
+								<div thumbsSlider="" class="swiper item-view__thumbs-swiper ">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide item-view__thumbs-slide">
+											<!-- ======== -->
+											<div class="item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/characteristic-color1.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+
+										<!-- OPEN FENCYBOX SLIDES -->
+										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/characteristic-color1.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											</div>
+											<div class="item-view__thumbs-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+											<!-- ======== -->
+										</div>
+										<!-- =================================-->
+
+
+										<button class="item-view__thumbs-btn">Еще <span>12</span></button>
+
+									</div>
+								</div>
+
+								<div class="swiper item-view__slider">
+									<div class="item-view__slider-mobile-top">
+										<span class="item-view__slider-mobile-top-title">23 фото</span>
+										<span class="item-view__slider-mobile-cross">
+											<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.9999 13.9999L1 1M14 1L1 14" stroke="#30CA51"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+
+									</div>
+									<div class="swiper-wrapper">
+										<div class="swiper-slide item-view__slide">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+
+										<!-- fency more slides -->
+										<div class="swiper-slide item-view__slide fencyClosed">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide fencyClosed">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide fencyClosed">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide fencyClosed">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<div class="swiper-slide item-view__slide fencyClosed">
+											<div class="item-view__slide-img item-view__slide-img--active">
+												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/5.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img">
+												<img src="@img/item-view/3.png" alt="photo">
+											</div>
+											<div class="item-view__slide-img ">
+												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											</div>
+										</div>
+										<!-- =============================== -->
+
+
+									</div>
+									<div class="swiper-button-prev item-view__prev item-view__btn">
+
+									</div>
+									<div class="swiper-button-next item-view__next item-view__btn">
+									</div>
+									<div class="swiper-pagination item-view__pagination"></div>
+
+
+									<div class="item-view__slider-cross">
+										<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M31.9998 31.9998L2 2M32 2L2 32" stroke="black" stroke-width="3"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+
+									</div>
+								</div>
+
+
+							</div>
+							<div class="item-view__content-characteristic">
+								<div class="item-view__content-price">
+									<div class="item-view__content-price-box">
+										<span class="item-view__content-from">от</span>45 700₸<span
+											class="item-view__content-to">до</span>78 790₸
+									</div>
+									<div class="item-view__content-compare_price">Сравнить цены</div>
+								</div>
+
+								<div class="item-view__content-color">
+									<p class="item-view__content-color-title item-view__content-title">
+										Цвет: <span>Зеленый</span>
+									</p>
+									<div class="item-view__content-color-box">
+										<div
+											class="item-view__content-color-card item-view__content-color-card--active">
+											<img src="@img/item-view/characteristic-color1.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color2.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color3.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color4.png" alt="photo-color">
+										</div>
+									</div>
+									<div class="item-view__content-color-mob-box ">
+										<div
+											class="item-view__content-color-mob-card item-view__content-color-mob--active">
+											<span
+												class="item-view__content-color-mob item-view__content-color-mob--grey "></span>
+										</div>
+										<div class="item-view__content-color-mob-card"><span
+												class="item-view__content-color-mob item-view__content-color-mob--black"></span>
+										</div>
+										<div class="item-view__content-color-mob-card"><span
+												class="item-view__content-color-mob item-view__content-color-mob--blue"></span>
+										</div>
+										<div class="item-view__content-color-mob-card">
+											<span
+												class="item-view__content-color-mob item-view__content-color-mob--black">
+											</span>
+										</div>
+									</div>
+
+									<label class="sidebar-label item-view__content-label">
+										<input class=" sidebar__manufacturer-checkbox main-checkbox" type="checkbox" />
+										<span class="custom-checkbox-btn"></span>
+										<p>Любой цвет</p>
+									</label>
+								</div>
+
+								<div class="item-view__content-configuration">
+									<p class="item-view__content-title item-view__content-configuration-title">
+										Конфигурация</p>
+									<div class="item-view__content-configuration-box">
+										<div
+											class="item-view__content-configuration-item item-view__content-configuration-item--active">
+											256ГБ</div>
+										<div class="item-view__content-configuration-item">512ГБ</div>
+									</div>
+								</div>
+
+								<div class="item-view__content-characteristics">
+									<p class="item-view__content-title item-view__content-characteristic-title">
+										Характеристики
+									</p>
+
+									<div class="item-view__content-characteristic-box content-characteristic-box">
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p>Экран</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												6.53" (1600x720)
+												IPS</p>
+										</div>
+
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p>
+													Память
+												</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												128 ГБ, ОЗУ 4 ГБ
+											</p>
+										</div>
+
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p> Процессор
+												</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												Helio G25
+											</p>
+										</div>
+
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p>Камера
+												</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												13 МП
+											</p>
+										</div>
+
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p>Операционная система
+												</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												Android 10
+											</p>
+										</div>
+
+										<div class="item-view__content-characteristic-item content-characteristic-item">
+											<div
+												class="item-view__content-characteristic-category content-characteristic-category">
+												<p>Емкость батареи</p>
+												<span></span>
+											</div>
+											<p
+												class="item-view__content-characteristic-descr content-characteristic-descr">
+												5000 мАч</p>
+										</div>
+									</div>
+									<button class="item-view__content-characteristic-btn">Все характеристики</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-view__content-buy tab-box  where-buy where-tab tab-box--active ">
+							<div class=" filters-wrapper item-view__content-filters-wrapper">
+
+								<button class=" filter-item filter-active item-view__content-filters-item">
+									по рейтингу
+								</button>
+								<button class="filter-item item-view__content-filters-item">по цене </button>
+
+
+							</div>
+							<div class="filters-wrapper-mob dropdown-box item-view__content-filters-wrapper-mob">
+								<button class="filters-wrapper-mob__select dropdown-select"> По рейтингу
+								</button>
+
+								<ul class="filters-wrapper-mob__list dropdown-list">
+									<li class="filters-wrapper-mob__item dropdown-item">
+										По цене
+									</li>
+									<li class="filters-wrapper-mob__item dropdown-item">
+										По рейтингу
+									</li>
+								</ul>
+							</div>
+							<div class="where-buy__items">
+								<div class="where-buy__item">
+									<div class="where-buy__content">
+										<div class="where-buy__img">
+											<img src="@img/item-view/1.png" alt="photo">
+											<div class="where-buy__shops-logo">
+												<img src="@img/icons/logo-ozone.svg" alt="logo-ozone">
+											</div>
+										</div>
+										<div class="where-buy__descr">
+											<p class="where-buy__name">Смартфон Xiaomi Redmi 9A</p>
+											<a class="where-buy__link" href="#">ozon.kz</a>
+											<p class="where-buy__delivery">Доставка из Алматы</p>
+										</div>
+									</div>
+									<div class="where-buy__shops">
+										<div class="where-buy__shops-box">
+											<p class="where-buy__color where-buy__color--blue"></p>
+											<p class="where-buy__price">59 200 ₸</p>
+										</div>
+										<div class="where-buy__shops-logo">
+											<img src="@img/icons/logo-ozone.svg" alt="logo-ozone">
+										</div>
+										<a class="where-buy__shops-btn" href="#">
+											<p><span class="where-buy__shops-btn-mob">Перейти</span> <span
+													class="where-buy__shop">в
+													магазин</span></p>
+										</a>
+									</div>
+								</div>
+
+								<div class="where-buy__item">
+									<div class="where-buy__content">
+										<div class="where-buy__img">
+											<img src="@img/item-view/1.png" alt="photo">
+											<div class="where-buy__shops-logo">
+												<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
+											</div>
+										</div>
+										<div class="where-buy__descr">
+											<p class="where-buy__name">Смартфон XIAOMI Redmi 9A 2/32Gb Sky Blue</p>
+											<a class="where-buy__link" href="#">aliexpress.kz</a>
+											<p class="where-buy__delivery">Доставка из Нур-Султан</p>
+										</div>
+									</div>
+									<div class="where-buy__shops">
+										<div class="where-buy__shops-box">
+											<p class="where-buy__color where-buy__color--blue"></p>
+											<p class="where-buy__price">46 500 ₸</p>
+										</div>
+										<div class="where-buy__shops-logo">
+											<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
+										</div>
+										<a class="where-buy__shops-btn" href="#">
+											<p><span class="where-buy__shops-btn-mob">Перейти</span> <span
+													class="where-buy__shop">в
+													магазин</span></p>
+										</a>
+									</div>
+								</div>
+
+								<div class="where-buy__item">
+									<div class="where-buy__content">
+										<div class="where-buy__img">
+											<img src="@img/item-view/1.png" alt="photo">
+											<div class="where-buy__shops-logo">
+												<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
+											</div>
+										</div>
+										<div class="where-buy__descr">
+											<p class="where-buy__name">Мобильный телефон Xiaomi Redmi 9A 32GB Granite
+												Gray M2006C3LG</p>
+											<a class="where-buy__link" href="#">aliexpress.kz</a>
+											<p class="where-buy__delivery">Доставка из Нур-Султан</p>
+										</div>
+									</div>
+									<div class="where-buy__shops">
+										<div class="where-buy__shops-box">
+											<p class="where-buy__color where-buy__color--blue"></p>
+											<p class="where-buy__price">59 200 ₸</p>
+										</div>
+										<div class="where-buy__shops-logo">
+											<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
+										</div>
+										<a class="where-buy__shops-btn" href="#">
+											<p><span class="where-buy__shops-btn-mob">Перейти</span> <span
+													class="where-buy__shop">в
+													магазин</span></p>
+										</a>
+									</div>
+								</div>
+
+								<div class="where-buy__item">
+									<div class="where-buy__content">
+										<div class="where-buy__img">
+											<img src="@img/item-view/1.png" alt="photo">
+											<div class="where-buy__shops-logo">
+												<img src="@img/icons/dns.svg" alt="logo-dns">
+											</div>
+										</div>
+										<div class="where-buy__descr">
+											<p class="where-buy__name">Смартфон XIAOMI Redmi 9A 2/32Gb Sky Blue</p>
+											<a class="where-buy__link" href="#">dns-shop.kz</a>
+											<p class="where-buy__delivery">Доставка из Нур-Султан</p>
+										</div>
+									</div>
+									<div class="where-buy__shops">
+										<div class="where-buy__shops-box">
+											<p class="where-buy__color where-buy__color--blue"></p>
+											<p class="where-buy__price">46 500 ₸</p>
+										</div>
+										<div class="where-buy__shops-logo">
+											<img src="@img/icons/dns.svg" alt="logo-dns">
+										</div>
+										<a class="where-buy__shops-btn" href="#">
+											<p><span class="where-buy__shops-btn-mob">Перейти</span> <span
+													class="where-buy__shop">в
+													магазин</span></p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-view__content-descr tab-box content-descr descr-tab">
+							<p class="content-descr__note">
+								Лакомое предложение в сегменте мобильных гаджетов под эгидой доступности от
+								небезызвестной китайской
+								марки Xiaomi. Модель берёт своё игровым чипсетом базового звена MediaTek Helio G25 в
+								сочетании с ёмкой
+								аккумуляторной батареей на 5000 мАч.
+							</p>
+
+							<ul class="content-descr__list">
+								<li class="content-descr__item">
+									<p>Энергоэффективная платформа вкупе с экраном традиционного формата HD+ выступают
+										гарантами двух
+										полноценных дней автономной работы Xiaomi Redmi 9A в режиме умеренно-средних
+										нагрузок.
+									</p>
+								</li>
+								<li class="content-descr__item">
+									<p> Выкроенный экран смартфона растянулся по диагонали на 6.53 дюймов и показывает
+										изображение в
+										максимальном разрешении 1600х720 пикселей. Он находится «под прикрытием»
+										защитного стекла Gorilla
+										Glass 5. </p>
+								</li>
+							</ul>
+
+							<div class="mobile-characteristic__box content-descr__box">
+								<div class="mobile-characteristic__content content-descr__inner">
+									<h5 class="mobile-characteristic__subtitle content-descr__subtitle">Основной дисплей
+									</h5>
+									<p class="mobile-characteristic__text content-descr__text">Характеристики основного
+										(а чаще всего — и
+										единственного)
+										дисплея,
+										установленного в аппарате.</p>
+									<p class="mobile-characteristic__text content-descr__text">
+
+
+										Помимо основных свойств — таких, как диагональ, разрешение (по нему экраны
+										условно делятся на
+										<span>HD</span>, <span>Full HD</span>, <span>Quad HD</span> и
+										<span>UltraHD</span>), тип матрицы
+										(чаще
+										всего IPS, OLED, AMOLED, Super AMOLED, Dynamic AMOLED),
+										наличие или отсутствие сенсора и т. п., в данном списке могут указываться и
+										более специфические
+										особе
+										<span class="mobile-characteristic__btn-box content-descr__btn-box">
+											<button class="mobile-characteristic__btn-more content-descr__btn-more">
+												<div></div>
+												<div></div>
+												<div></div>
+											</button>
+										</span>
+									</p>
+								</div>
+
+								<div class="mobile-characteristic__content content-descr__inner">
+									<h5 class="mobile-characteristic__subtitle content-descr__subtitle">Gorilla Glass
+									</h5>
+									<p class="mobile-characteristic__text content-descr__text">Специальное особо прочное
+										стекло,
+										применяемое для покрытия
+										дисплеев и «спинок» современных мобильных телефонов. Такой материал в несколько
+										раз прочнее обычного
+										стекла и отличается повышенной стойкостью к царапинам и ударам. Нынче на рынке
+										можно встретить
+										несколько версий Gorilla Glass, вот их основные особенности:</p>
+									<p class="mobile-characteristic__text content-descr__text">
+										— Gorilla Glass 3 (2013 год). Несмотря на «почтенный возраст», отличается
+										высокой стойкостью к
+										царапинам — превзойти этот показатель удалось лишь 7 лет спустя
+
+									</p>
+								</div>
+
+								<div class="mobile-characteristic__content content-descr__inner">
+									<h5 class="mobile-characteristic__subtitle content-descr__subtitle">Яркость</h5>
+									<p class="mobile-characteristic__text content-descr__text">Максимальная яркость в
+										нитах,
+										обеспечиваемая экраном смартфона.
+									</p>
+									<p class="mobile-characteristic__text content-descr__text">
+										Чем ярче дисплей, тем более читабельной остаётся на нём картинка под интенсивным
+										внешним освещением
+										(к примеру, на улице в ясную солнечную погоду). Также высокая яркость важна для
+										корректного
+										отображения HDR-контента. Однако большой запас по данному показателю сказывается
+										на стоимости и
+										энергопотреблении экрана. Производители могут указывать стандартное,
+										максимальное и пиковое значение
+										яркости.
+										<span class="mobile-characteristic__btn-box content-descr__btn-box">
+											<button class="mobile-characteristic__btn-more content-descr__btn-more">
+												<div></div>
+												<div></div>
+												<div></div>
+											</button>
+										</span>
+									</p>
+								</div>
+
+								<div class="mobile-characteristic__content content-descr__inner">
+									<h5 class="mobile-characteristic__subtitle content-descr__subtitle">Соотношение
+										дисплей/корпус</h5>
+									<p class="mobile-characteristic__text content-descr__text">Соотношение между
+										площадью экрана и общей
+										площадью передней
+										панели телефона. Проще говоря, данная характеристика описывает, какая часть
+										передней панели занята
+										экраном; остальное приходится на рамку.
+									</p>
+									<p class="mobile-characteristic__text content-descr__text">
+										Данный показатель приводится исключительно для смартфонов с сенсорными экранами
+										— именно для них он
+										наиболее актуален. Чем больший процент корпуса занимает экран — тем тоньше
+										рамка, тем аккуратнее
+										выглядит смартфон и тем удобнее работать с ним одной рукой.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="item-view__characteristic tab-box characteristic characteristic-tab">
+							<h3 class="characteristic__title">
+								Характеристики
+							</h3>
+							<div class="characteristic__items">
+								<div class="characteristic__item">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Дисплей</p>
+									</div>
+									<div class="characteristic__item-box">
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p href="#">Основной дисплей</ф>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												6.53 " (1600х720) (20:9), 269 ppi, IPS, сенсорный экран
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Соотношение<br>
+														дисплей/корпус</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												81%
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="characteristic__item">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Аппаратная часть</p>
+									</div>
+
+									<div class="characteristic__item-box">
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Операционная система
+													</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												Android 10.0
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p> Модель процессора</p>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												Helio G25
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Частота процессора</p>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												2 ГГц
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Ядер процессора</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												8
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Графический процессор</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												PowerVR GE8320
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Оперативная память</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												2 ГБ
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Тип ОЗУ</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												LPDDR4x
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Встроенная память</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												32 ГБ
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Слот для карт памяти</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												microSD
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Макс. объем карты</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												256 ГБ
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Количество SIM</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												2 SIM
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Тип SIM-карты</p>
+
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												nano-SIM
+											</p>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="characteristic__item">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Коммуникация и порты</p>
+									</div>
+									<div class="characteristic__item-box">
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Стандарты связи
+
+
+													</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												GSM, 3G, 4G (LTE)
+
+
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Коммуникации</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												Wi-Fi 4 (802.11n), Bluetooth v 5.0, USB хост (OTG), ИК-порт
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Порты подлючения</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												microUSB, mini-Jack (3.5 мм), выход на наушники сверху
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="characteristic__item">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Функции
+											и навигация</p>
+									</div>
+									<div class="characteristic__item-box">
+
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Функции и возможности
+
+
+													</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												сканер отпечатка отсутствует, FM-приемник
+												шумоподавление, фонарик, датчик освещения
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Навигация</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												aGPS, GPS-модуль, ГЛОНАСС
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="characteristic__item characteristic__item-more">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Коммуникация и порты</p>
+									</div>
+									<div class="characteristic__item-box">
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Стандарты связи
+
+
+													</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												GSM, 3G, 4G (LTE)
+
+
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Коммуникации</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												Wi-Fi 4 (802.11n), Bluetooth v 5.0, USB хост (OTG), ИК-порт
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Порты подлючения</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												microUSB, mini-Jack (3.5 мм), выход на наушники сверху
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="characteristic__item characteristic__item-more">
+									<div class="characteristic__name-wrapper">
+										<p class="characteristic__name">Функции
+											и навигация</p>
+									</div>
+									<div class="characteristic__item-box">
+
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Функции и возможности
+
+
+													</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												сканер отпечатка отсутствует, FM-приемник
+												шумоподавление, фонарик, датчик освещения
+											</p>
+										</div>
+										<div class="characteristic__box">
+											<div class="characteristic__nomination">
+												<div class="characteristic__nomination-box">
+													<p>Навигация</p>
+													<div class="question">
+														<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<circle opacity="0.55" cx="7" cy="7" r="7" fill="#BFC7D2" />
+															<path
+																d="M4.29004 5.37109H5.55225C5.59521 4.70508 6.04102 4.28076 6.73389 4.28076C7.41064 4.28076 7.86182 4.69434 7.86182 5.26367C7.86182 5.79541 7.63623 6.08545 6.97021 6.48828C6.229 6.92334 5.91748 7.40674 5.96582 8.20166L5.97119 8.58301H7.21729V8.27148C7.21729 7.73438 7.41602 7.45508 8.11963 7.04688C8.8501 6.61182 9.2583 6.03711 9.2583 5.21533C9.2583 4.03369 8.27539 3.18506 6.80371 3.18506C5.2085 3.18506 4.33301 4.10889 4.29004 5.37109ZM6.61035 11.1074C7.04541 11.1074 7.38916 10.769 7.38916 10.3447C7.38916 9.92041 7.04541 9.5874 6.61035 9.5874C6.17529 9.5874 5.82617 9.92041 5.82617 10.3447C5.82617 10.769 6.17529 11.1074 6.61035 11.1074Z"
+																fill="white" />
+														</svg>
+
+														<div class="question__box">
+															<div class="question__tip">
+																<div class="question__tip-box">
+																	<p class="question__tip-name">Графический процессор
+																	</p>
+																	<div class="question__tip-descr">Модель графического
+																		процессора,
+																		используемого в мобильном
+																		телефоне.
+
+																		<p> Этот модуль отвечает за все задачи,
+																			связанные с графикой;
+																			соответственно, его
+																			характеристики напрямую влияют на
+																			эффективность обработки
+																			той или иной картинки. Особенно
+																			это заметно на примере «тяжелого» контента,
+																			такого как
+																			современные 3D-игры.</p>
+																	</div>
+																	<div class="question__tip-img">
+																		<img src="@img/icons/close-cross.svg"
+																			alt="close-icon">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+												<span></span>
+											</div>
+											<p class="characteristic__text">
+												aGPS, GPS-модуль, ГЛОНАСС
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<button class="characteristic__btn characteristic__btn-more-bottom">
+								<p>Все характеристики <span><svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 1L7 15M7 15L13 9M7 15L1 9" stroke="#30CA51" stroke-width="1.6"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</span></p>
+							</button>
+						</div>
+
+						<div class="item-view__reviews reviews tab-box reviews-tab">
+							<div class="reviews__box">
+								<h3 class="reviews__title">Отзывы <span class="reviews__title-num">34</span></h3>
+								<button class="reviews__add-btn" data-micromodal-trigger="modal-reviews">
+									<p>Добавить отзыв</p>
+								</button>
+							</div>
+
+							<div class="reviews__items">
+								<div class="reviews__item">
+									<div class="reviews__img"><img src="@img/icons/reviews-photo.png" alt="photo"></div>
+									<div class="reviews__content">
+										<div class="reviews__rating">
+
+										</div>
+
+										<p class="reviews__item-title">Можно брать, неплохой телефон</p>
+										<p class="reviews__item-text">Специальное особо прочное стекло, применяемое для
+											покрытия дисплеев
+										</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Достоинства:</span> Цена,
+											аккумулятор,яркий цвет телефонаю а особенно специальное особо прочное
+											стекло, применяемое для
+											покрытия дисплеев</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Недостатки:</span> Для
+											соцсетей
+											и Viber этот телефон вполне подойдёт. Очень большой, можно увеличить шрифт(
+											очень удобная функция
+											для людей с плохим зрением).</p>
+
+										<div class="reviews__item-box">
+											<div class="reviews__item-date">2 дня назад</div>
+											<span class="reviews__item-like">
+												<svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M17.0197 15.9288C17.673 15.6528 18.0466 14.8677 17.6556 14.2657C17.5777 14.1766 17.4515 14.0215 17.4515 14.0215L17.7806 13.864C18.5291 13.4916 18.9214 12.3243 18.1406 11.7345C18.3849 11.6399 18.5998 11.4836 18.7637 11.2813C18.9276 11.0791 19.0349 10.8379 19.0748 10.5819C19.1432 10.3314 19.1353 10.0667 19.0521 9.82061C18.9689 9.57457 18.8142 9.35817 18.6071 9.19843C18.8257 8.96125 18.9895 8.68003 19.0871 8.37424C19.1884 8.07225 19.184 7.7455 19.0748 7.44625C18.884 7.04841 18.5572 6.72973 18.1518 6.54635C17.9512 6.44919 17.741 6.37267 17.5245 6.31801C16.1313 5.97002 14.7295 6.52315 13.3277 6.38517C12.9565 6.33877 12.4864 6.24719 12.6262 5.73924C13.0506 3.78559 13.8907 2.49862 13.1632 0.818481C12.813 0.0162622 12.0707 -0.227946 11.4731 0.2275L11.4063 0.281225C11.0784 0.880753 10.9905 1.52668 10.7109 2.12621C10.1962 3.18728 9.757 3.66959 9.29303 4.89063C9.22662 5.15061 9.14398 5.4063 9.04558 5.65621C8.94264 5.90605 8.80524 6.14067 8.63729 6.35342C8.08299 7.12145 6.94224 7.59399 6.04523 7.8382L6.00812 15.1265C6.61397 15.111 7.21981 15.1581 7.81574 15.267C8.6645 15.422 9.03444 15.6003 9.87701 15.77C10.3389 15.8579 10.8017 15.9361 11.2652 16.0045C11.6129 16.0558 11.9148 16.1009 12.2637 16.14C13.8412 16.256 15.4768 16.5747 17.0197 15.9288Z"
+														fill="#9BA1AA" />
+													<path
+														d="M4.67683 7.26309H0.618628C0.454558 7.26309 0.297207 7.32741 0.181192 7.44191C0.0651762 7.5564 0 7.71169 0 7.87361V15.1827C0 15.3446 0.0651762 15.4999 0.181192 15.6144C0.297207 15.7289 0.454558 15.7932 0.618628 15.7932H4.67683C4.8409 15.7932 4.99825 15.7289 5.11427 15.6144C5.23028 15.4999 5.29545 15.3446 5.29545 15.1827V7.87483C5.29562 7.79455 5.27974 7.71503 5.24872 7.64082C5.21771 7.56661 5.17216 7.49916 5.1147 7.44234C5.05724 7.38552 4.98899 7.34044 4.91385 7.30968C4.83872 7.27893 4.75817 7.26309 4.67683 7.26309ZM3.66352 14.9812C3.53641 14.9815 3.41209 14.9445 3.3063 14.875C3.20051 14.8054 3.11802 14.7065 3.06926 14.5906C3.02051 14.4748 3.00768 14.3472 3.03242 14.2242C3.05716 14.1012 3.11834 13.9881 3.20822 13.8994C3.2981 13.8107 3.41263 13.7503 3.53731 13.7259C3.66198 13.7015 3.7912 13.7142 3.90859 13.7623C4.02597 13.8104 4.12625 13.8918 4.19671 13.9962C4.26718 14.1006 4.30466 14.2233 4.30442 14.3488C4.30442 14.4318 4.28784 14.5141 4.25563 14.5908C4.22342 14.6675 4.17621 14.7373 4.1167 14.796C4.05718 14.8547 3.98653 14.9013 3.90877 14.9331C3.83102 14.9649 3.74768 14.9812 3.66352 14.9812Z"
+														fill="#9BA1AA" />
+												</svg>
+												<span>12</span>
+											</span>
+											<span class="reviews__item-dislike">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M11.9586 1.5012C11.0859 1.3374 10.7055 1.14909 9.83907 0.969815C9.36411 0.876952 8.8883 0.794406 8.41164 0.722179C8.05415 0.668009 7.74372 0.62029 7.38496 0.579018C5.76796 0.46036 4.08608 0.119861 2.49962 0.802144C1.82789 1.09363 1.44367 1.92295 1.8457 2.5588C1.92585 2.65295 2.05562 2.81675 2.05562 2.81675L1.7172 2.98313C0.94751 3.37651 0.544215 4.60952 1.34699 5.23247C1.09579 5.33245 0.87487 5.49752 0.706314 5.71118C0.537758 5.92483 0.427468 6.1796 0.386461 6.45001C0.316129 6.71454 0.324232 6.99421 0.40976 7.2541C0.495287 7.51399 0.654447 7.74257 0.867361 7.9113C0.642573 8.16183 0.474149 8.45888 0.373738 8.78189C0.269668 9.10087 0.274149 9.44602 0.386461 9.76211C0.582581 10.1823 0.918667 10.519 1.33554 10.7127C1.54181 10.8153 1.75795 10.8961 1.98056 10.9538C3.41308 11.3214 4.8545 10.7372 6.29593 10.8829C6.6776 10.9319 7.16105 11.0287 7.01728 11.5652C6.58091 13.6288 5.71707 14.9882 6.46514 16.7629C6.82518 17.6103 7.58851 17.8683 8.20299 17.3872L8.27169 17.3304C8.60883 16.6971 8.69916 16.0149 8.98668 15.3816C9.51593 14.2608 9.96757 13.7513 10.4447 12.4616C10.5129 12.187 10.5979 11.9169 10.6991 11.6529C10.8049 11.389 10.9462 11.1412 11.1189 10.9164C11.6889 10.1052 12.8619 9.60605 13.7842 9.3481L13.8186 1.64952C13.1952 1.66603 12.5718 1.61632 11.9586 1.5012Z"
+														fill="#9BA1AA" />
+													<path
+														d="M19.3642 0.941441H15.1913C15.0226 0.941441 14.8608 1.00938 14.7415 1.13032C14.6222 1.25126 14.5552 1.41529 14.5552 1.58632V9.30682C14.5552 9.47786 14.6222 9.64189 14.7415 9.76283C14.8608 9.88376 15.0226 9.9517 15.1913 9.9517H19.3642C19.5329 9.9517 19.6947 9.88376 19.814 9.76283C19.9333 9.64189 20.0003 9.47786 20.0003 9.30682V1.5889C20.0007 1.504 19.9844 1.41986 19.9526 1.34132C19.9208 1.26278 19.874 1.19139 19.8149 1.13123C19.7558 1.07108 19.6856 1.02334 19.6082 0.990775C19.5309 0.958206 19.448 0.94144 19.3642 0.941441ZM16.2396 3.14048C16.109 3.14074 15.9812 3.10169 15.8724 3.0283C15.7637 2.9549 15.6789 2.85044 15.6287 2.72815C15.5785 2.60586 15.5653 2.47123 15.5906 2.3413C15.6159 2.21136 15.6787 2.09197 15.771 1.99823C15.8633 1.90448 15.981 1.8406 16.1091 1.81467C16.2372 1.78873 16.37 1.80192 16.4907 1.85254C16.6115 1.90317 16.7147 1.98896 16.7873 2.09907C16.8599 2.20918 16.8986 2.33865 16.8986 2.47109C16.8988 2.55894 16.8819 2.64596 16.8488 2.72716C16.8158 2.80837 16.7673 2.88217 16.7061 2.94434C16.6449 3.00652 16.5722 3.05585 16.4921 3.0895C16.4121 3.12316 16.3263 3.14048 16.2396 3.14048Z"
+														fill="#9BA1AA" />
+												</svg>
+
+												<span>8</span>
+											</span>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="reviews__item">
+									<div class="reviews__img"><img src="@img/icons/reviews-photo.png" alt="photo"></div>
+									<div class="reviews__content">
+										<div class="reviews__rating">
+
+										</div>
+
+										<p class="reviews__item-title">Можно брать, неплохой телефон</p>
+										<p class="reviews__item-text">Специальное особо прочное стекло, применяемое для
+											покрытия дисплеев
+										</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Достоинства:</span> Цена,
+											аккумулятор,яркий цвет телефонаю а особенно специальное особо прочное
+											стекло, применяемое для
+											покрытия дисплеев</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Недостатки:</span> Для
+											соцсетей
+											и Viber этот телефон вполне подойдёт. Очень большой, можно увеличить шрифт(
+											очень удобная функция
+											для людей с плохим зрением).</p>
+
+										<div class="reviews__item-box">
+											<div class="reviews__item-date">2 дня назад</div>
+											<span class="reviews__item-like"><svg width="20" height="17"
+													viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M17.0197 15.9288C17.673 15.6528 18.0466 14.8677 17.6556 14.2657C17.5777 14.1766 17.4515 14.0215 17.4515 14.0215L17.7806 13.864C18.5291 13.4916 18.9214 12.3243 18.1406 11.7345C18.3849 11.6399 18.5998 11.4836 18.7637 11.2813C18.9276 11.0791 19.0349 10.8379 19.0748 10.5819C19.1432 10.3314 19.1353 10.0667 19.0521 9.82061C18.9689 9.57457 18.8142 9.35817 18.6071 9.19843C18.8257 8.96125 18.9895 8.68003 19.0871 8.37424C19.1884 8.07225 19.184 7.7455 19.0748 7.44625C18.884 7.04841 18.5572 6.72973 18.1518 6.54635C17.9512 6.44919 17.741 6.37267 17.5245 6.31801C16.1313 5.97002 14.7295 6.52315 13.3277 6.38517C12.9565 6.33877 12.4864 6.24719 12.6262 5.73924C13.0506 3.78559 13.8907 2.49862 13.1632 0.818481C12.813 0.0162622 12.0707 -0.227946 11.4731 0.2275L11.4063 0.281225C11.0784 0.880753 10.9905 1.52668 10.7109 2.12621C10.1962 3.18728 9.757 3.66959 9.29303 4.89063C9.22662 5.15061 9.14398 5.4063 9.04558 5.65621C8.94264 5.90605 8.80524 6.14067 8.63729 6.35342C8.08299 7.12145 6.94224 7.59399 6.04523 7.8382L6.00812 15.1265C6.61397 15.111 7.21981 15.1581 7.81574 15.267C8.6645 15.422 9.03444 15.6003 9.87701 15.77C10.3389 15.8579 10.8017 15.9361 11.2652 16.0045C11.6129 16.0558 11.9148 16.1009 12.2637 16.14C13.8412 16.256 15.4768 16.5747 17.0197 15.9288Z"
+														fill="#9BA1AA" />
+													<path
+														d="M4.67683 7.26309H0.618628C0.454558 7.26309 0.297207 7.32741 0.181192 7.44191C0.0651762 7.5564 0 7.71169 0 7.87361V15.1827C0 15.3446 0.0651762 15.4999 0.181192 15.6144C0.297207 15.7289 0.454558 15.7932 0.618628 15.7932H4.67683C4.8409 15.7932 4.99825 15.7289 5.11427 15.6144C5.23028 15.4999 5.29545 15.3446 5.29545 15.1827V7.87483C5.29562 7.79455 5.27974 7.71503 5.24872 7.64082C5.21771 7.56661 5.17216 7.49916 5.1147 7.44234C5.05724 7.38552 4.98899 7.34044 4.91385 7.30968C4.83872 7.27893 4.75817 7.26309 4.67683 7.26309ZM3.66352 14.9812C3.53641 14.9815 3.41209 14.9445 3.3063 14.875C3.20051 14.8054 3.11802 14.7065 3.06926 14.5906C3.02051 14.4748 3.00768 14.3472 3.03242 14.2242C3.05716 14.1012 3.11834 13.9881 3.20822 13.8994C3.2981 13.8107 3.41263 13.7503 3.53731 13.7259C3.66198 13.7015 3.7912 13.7142 3.90859 13.7623C4.02597 13.8104 4.12625 13.8918 4.19671 13.9962C4.26718 14.1006 4.30466 14.2233 4.30442 14.3488C4.30442 14.4318 4.28784 14.5141 4.25563 14.5908C4.22342 14.6675 4.17621 14.7373 4.1167 14.796C4.05718 14.8547 3.98653 14.9013 3.90877 14.9331C3.83102 14.9649 3.74768 14.9812 3.66352 14.9812Z"
+														fill="#9BA1AA" />
+												</svg>
+												<span>12</span></span>
+											<span class="reviews__item-dislike">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M11.9586 1.5012C11.0859 1.3374 10.7055 1.14909 9.83907 0.969815C9.36411 0.876952 8.8883 0.794406 8.41164 0.722179C8.05415 0.668009 7.74372 0.62029 7.38496 0.579018C5.76796 0.46036 4.08608 0.119861 2.49962 0.802144C1.82789 1.09363 1.44367 1.92295 1.8457 2.5588C1.92585 2.65295 2.05562 2.81675 2.05562 2.81675L1.7172 2.98313C0.94751 3.37651 0.544215 4.60952 1.34699 5.23247C1.09579 5.33245 0.87487 5.49752 0.706314 5.71118C0.537758 5.92483 0.427468 6.1796 0.386461 6.45001C0.316129 6.71454 0.324232 6.99421 0.40976 7.2541C0.495287 7.51399 0.654447 7.74257 0.867361 7.9113C0.642573 8.16183 0.474149 8.45888 0.373738 8.78189C0.269668 9.10087 0.274149 9.44602 0.386461 9.76211C0.582581 10.1823 0.918667 10.519 1.33554 10.7127C1.54181 10.8153 1.75795 10.8961 1.98056 10.9538C3.41308 11.3214 4.8545 10.7372 6.29593 10.8829C6.6776 10.9319 7.16105 11.0287 7.01728 11.5652C6.58091 13.6288 5.71707 14.9882 6.46514 16.7629C6.82518 17.6103 7.58851 17.8683 8.20299 17.3872L8.27169 17.3304C8.60883 16.6971 8.69916 16.0149 8.98668 15.3816C9.51593 14.2608 9.96757 13.7513 10.4447 12.4616C10.5129 12.187 10.5979 11.9169 10.6991 11.6529C10.8049 11.389 10.9462 11.1412 11.1189 10.9164C11.6889 10.1052 12.8619 9.60605 13.7842 9.3481L13.8186 1.64952C13.1952 1.66603 12.5718 1.61632 11.9586 1.5012Z"
+														fill="#9BA1AA" />
+													<path
+														d="M19.3642 0.941441H15.1913C15.0226 0.941441 14.8608 1.00938 14.7415 1.13032C14.6222 1.25126 14.5552 1.41529 14.5552 1.58632V9.30682C14.5552 9.47786 14.6222 9.64189 14.7415 9.76283C14.8608 9.88376 15.0226 9.9517 15.1913 9.9517H19.3642C19.5329 9.9517 19.6947 9.88376 19.814 9.76283C19.9333 9.64189 20.0003 9.47786 20.0003 9.30682V1.5889C20.0007 1.504 19.9844 1.41986 19.9526 1.34132C19.9208 1.26278 19.874 1.19139 19.8149 1.13123C19.7558 1.07108 19.6856 1.02334 19.6082 0.990775C19.5309 0.958206 19.448 0.94144 19.3642 0.941441ZM16.2396 3.14048C16.109 3.14074 15.9812 3.10169 15.8724 3.0283C15.7637 2.9549 15.6789 2.85044 15.6287 2.72815C15.5785 2.60586 15.5653 2.47123 15.5906 2.3413C15.6159 2.21136 15.6787 2.09197 15.771 1.99823C15.8633 1.90448 15.981 1.8406 16.1091 1.81467C16.2372 1.78873 16.37 1.80192 16.4907 1.85254C16.6115 1.90317 16.7147 1.98896 16.7873 2.09907C16.8599 2.20918 16.8986 2.33865 16.8986 2.47109C16.8988 2.55894 16.8819 2.64596 16.8488 2.72716C16.8158 2.80837 16.7673 2.88217 16.7061 2.94434C16.6449 3.00652 16.5722 3.05585 16.4921 3.0895C16.4121 3.12316 16.3263 3.14048 16.2396 3.14048Z"
+														fill="#9BA1AA" />
+												</svg>
+
+												<span>8</span>
+											</span>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="reviews__item">
+									<div class="reviews__img"><img src="@img/icons/reviews-photo.png" alt="photo"></div>
+									<div class="reviews__content">
+										<div class="reviews__rating">
+
+										</div>
+
+										<p class="reviews__item-title">Можно брать, неплохой телефон</p>
+										<p class="reviews__item-text">Специальное особо прочное стекло, применяемое для
+											покрытия дисплеев
+										</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Достоинства:</span> Цена,
+											аккумулятор,яркий цвет телефонаю а особенно специальное особо прочное
+											стекло, применяемое для
+											покрытия дисплеев</p>
+
+										<p class="reviews__item-text"><span
+												class="reviews__item-text-descr">Недостатки:</span> Для
+											соцсетей
+											и Viber этот телефон вполне подойдёт. Очень большой, можно увеличить шрифт(
+											очень удобная функция
+											для людей с плохим зрением).</p>
+
+										<div class="reviews__item-box">
+											<div class="reviews__item-date">2 дня назад</div>
+											<span class="reviews__item-like"><svg width="20" height="17"
+													viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M17.0197 15.9288C17.673 15.6528 18.0466 14.8677 17.6556 14.2657C17.5777 14.1766 17.4515 14.0215 17.4515 14.0215L17.7806 13.864C18.5291 13.4916 18.9214 12.3243 18.1406 11.7345C18.3849 11.6399 18.5998 11.4836 18.7637 11.2813C18.9276 11.0791 19.0349 10.8379 19.0748 10.5819C19.1432 10.3314 19.1353 10.0667 19.0521 9.82061C18.9689 9.57457 18.8142 9.35817 18.6071 9.19843C18.8257 8.96125 18.9895 8.68003 19.0871 8.37424C19.1884 8.07225 19.184 7.7455 19.0748 7.44625C18.884 7.04841 18.5572 6.72973 18.1518 6.54635C17.9512 6.44919 17.741 6.37267 17.5245 6.31801C16.1313 5.97002 14.7295 6.52315 13.3277 6.38517C12.9565 6.33877 12.4864 6.24719 12.6262 5.73924C13.0506 3.78559 13.8907 2.49862 13.1632 0.818481C12.813 0.0162622 12.0707 -0.227946 11.4731 0.2275L11.4063 0.281225C11.0784 0.880753 10.9905 1.52668 10.7109 2.12621C10.1962 3.18728 9.757 3.66959 9.29303 4.89063C9.22662 5.15061 9.14398 5.4063 9.04558 5.65621C8.94264 5.90605 8.80524 6.14067 8.63729 6.35342C8.08299 7.12145 6.94224 7.59399 6.04523 7.8382L6.00812 15.1265C6.61397 15.111 7.21981 15.1581 7.81574 15.267C8.6645 15.422 9.03444 15.6003 9.87701 15.77C10.3389 15.8579 10.8017 15.9361 11.2652 16.0045C11.6129 16.0558 11.9148 16.1009 12.2637 16.14C13.8412 16.256 15.4768 16.5747 17.0197 15.9288Z"
+														fill="#9BA1AA" />
+													<path
+														d="M4.67683 7.26309H0.618628C0.454558 7.26309 0.297207 7.32741 0.181192 7.44191C0.0651762 7.5564 0 7.71169 0 7.87361V15.1827C0 15.3446 0.0651762 15.4999 0.181192 15.6144C0.297207 15.7289 0.454558 15.7932 0.618628 15.7932H4.67683C4.8409 15.7932 4.99825 15.7289 5.11427 15.6144C5.23028 15.4999 5.29545 15.3446 5.29545 15.1827V7.87483C5.29562 7.79455 5.27974 7.71503 5.24872 7.64082C5.21771 7.56661 5.17216 7.49916 5.1147 7.44234C5.05724 7.38552 4.98899 7.34044 4.91385 7.30968C4.83872 7.27893 4.75817 7.26309 4.67683 7.26309ZM3.66352 14.9812C3.53641 14.9815 3.41209 14.9445 3.3063 14.875C3.20051 14.8054 3.11802 14.7065 3.06926 14.5906C3.02051 14.4748 3.00768 14.3472 3.03242 14.2242C3.05716 14.1012 3.11834 13.9881 3.20822 13.8994C3.2981 13.8107 3.41263 13.7503 3.53731 13.7259C3.66198 13.7015 3.7912 13.7142 3.90859 13.7623C4.02597 13.8104 4.12625 13.8918 4.19671 13.9962C4.26718 14.1006 4.30466 14.2233 4.30442 14.3488C4.30442 14.4318 4.28784 14.5141 4.25563 14.5908C4.22342 14.6675 4.17621 14.7373 4.1167 14.796C4.05718 14.8547 3.98653 14.9013 3.90877 14.9331C3.83102 14.9649 3.74768 14.9812 3.66352 14.9812Z"
+														fill="#9BA1AA" />
+												</svg>
+												<span>12</span></span>
+											<span class="reviews__item-dislike">
+												<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M11.9586 1.5012C11.0859 1.3374 10.7055 1.14909 9.83907 0.969815C9.36411 0.876952 8.8883 0.794406 8.41164 0.722179C8.05415 0.668009 7.74372 0.62029 7.38496 0.579018C5.76796 0.46036 4.08608 0.119861 2.49962 0.802144C1.82789 1.09363 1.44367 1.92295 1.8457 2.5588C1.92585 2.65295 2.05562 2.81675 2.05562 2.81675L1.7172 2.98313C0.94751 3.37651 0.544215 4.60952 1.34699 5.23247C1.09579 5.33245 0.87487 5.49752 0.706314 5.71118C0.537758 5.92483 0.427468 6.1796 0.386461 6.45001C0.316129 6.71454 0.324232 6.99421 0.40976 7.2541C0.495287 7.51399 0.654447 7.74257 0.867361 7.9113C0.642573 8.16183 0.474149 8.45888 0.373738 8.78189C0.269668 9.10087 0.274149 9.44602 0.386461 9.76211C0.582581 10.1823 0.918667 10.519 1.33554 10.7127C1.54181 10.8153 1.75795 10.8961 1.98056 10.9538C3.41308 11.3214 4.8545 10.7372 6.29593 10.8829C6.6776 10.9319 7.16105 11.0287 7.01728 11.5652C6.58091 13.6288 5.71707 14.9882 6.46514 16.7629C6.82518 17.6103 7.58851 17.8683 8.20299 17.3872L8.27169 17.3304C8.60883 16.6971 8.69916 16.0149 8.98668 15.3816C9.51593 14.2608 9.96757 13.7513 10.4447 12.4616C10.5129 12.187 10.5979 11.9169 10.6991 11.6529C10.8049 11.389 10.9462 11.1412 11.1189 10.9164C11.6889 10.1052 12.8619 9.60605 13.7842 9.3481L13.8186 1.64952C13.1952 1.66603 12.5718 1.61632 11.9586 1.5012Z"
+														fill="#9BA1AA" />
+													<path
+														d="M19.3642 0.941441H15.1913C15.0226 0.941441 14.8608 1.00938 14.7415 1.13032C14.6222 1.25126 14.5552 1.41529 14.5552 1.58632V9.30682C14.5552 9.47786 14.6222 9.64189 14.7415 9.76283C14.8608 9.88376 15.0226 9.9517 15.1913 9.9517H19.3642C19.5329 9.9517 19.6947 9.88376 19.814 9.76283C19.9333 9.64189 20.0003 9.47786 20.0003 9.30682V1.5889C20.0007 1.504 19.9844 1.41986 19.9526 1.34132C19.9208 1.26278 19.874 1.19139 19.8149 1.13123C19.7558 1.07108 19.6856 1.02334 19.6082 0.990775C19.5309 0.958206 19.448 0.94144 19.3642 0.941441ZM16.2396 3.14048C16.109 3.14074 15.9812 3.10169 15.8724 3.0283C15.7637 2.9549 15.6789 2.85044 15.6287 2.72815C15.5785 2.60586 15.5653 2.47123 15.5906 2.3413C15.6159 2.21136 15.6787 2.09197 15.771 1.99823C15.8633 1.90448 15.981 1.8406 16.1091 1.81467C16.2372 1.78873 16.37 1.80192 16.4907 1.85254C16.6115 1.90317 16.7147 1.98896 16.7873 2.09907C16.8599 2.20918 16.8986 2.33865 16.8986 2.47109C16.8988 2.55894 16.8819 2.64596 16.8488 2.72716C16.8158 2.80837 16.7673 2.88217 16.7061 2.94434C16.6449 3.00652 16.5722 3.05585 16.4921 3.0895C16.4121 3.12316 16.3263 3.14048 16.2396 3.14048Z"
+														fill="#9BA1AA" />
+												</svg>
+
+												<span>8</span>
+											</span>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="reviews__pagination pagination">
+								<ul class="reviews__pagination-list pagination-list">
+
+									<a class="reviews__pagination-link pagination-link" href="#">
+										<li class="reviews__pagination-item pagination-active pagination-item">
+											1
+										</li>
+									</a>
+									<a class="reviews__pagination-link pagination-link" href="#">
+										<li class="reviews__pagination-item pagination-item">
+											2
+										</li>
+									</a>
+									<a class="reviews__pagination-link pagination-link" href="#">
+										<li class="reviews__pagination-item pagination-item">
+											3
+										</li>
+									</a>
+
+									<a class="reviews__pagination-link pagination-link" href="#">
+										<li class="reviews__pagination-item pagination-item pagination-more">
+											<svg width="19" height="5" viewBox="0 0 19 5" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<g opacity="0.7">
+													<circle cx="2.29304" cy="2.29304" r="2.29304" fill="#BFC7D2" />
+													<circle cx="9.4991" cy="2.29304" r="2.29304" fill="#BFC7D2" />
+													<circle cx="16.7071" cy="2.29304" r="2.29304" fill="#BFC7D2" />
+												</g>
+											</svg>
+										</li>
+									</a>
+
+									<a class="reviews__pagination-link pagination-link" href="#">
+										<li class="reviews__pagination-item pagination-item">
+											26
+										</li>
+									</a>
+								</ul>
+								<button class="reviews__pagination-btn pagination-btn">Далее
+									<svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 7.42857L16 7.42857M16 7.42857L9.57143 1M16 7.42857L9.57143 13.8571"
+											stroke="white" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="item-view__same-models popular-models">
+							<h3 class="popular-models__title ">Похожие модели</h3>
+
+							<div class="popular-models__swiper-inner">
+								<div class="swiper popular-models__swiper item-view__same-models-swiper">
+
+									<div class="swiper-wrapper popular-models__swiper-wrapper ">
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi 12X</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 12 600 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models2.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 20 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models3.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 25 700 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models4.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi Redmi
+																8A 4/64 ГБ CN Черный</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 25 700 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models5.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class=" popular-models__scrollbar"></div>
+								</div>
+								<div class="slider_button_wrapper-prev">
+									<div class="popular-models__btn-prev">
+										<img src="@img/icons/arrow-next.svg" alt="arrow">
+									</div>
+								</div>
+								<div class="slider_button_wrapper-next">
+									<div class="popular-models__btn-next">
+										<img src="@img/icons/arrow-next.svg" alt="arrow">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="item-view__same-models item-view__other-brands popular-models">
+							<h3 class="popular-models__title ">Другие бренды</h3>
+
+							<div class="popular-models__swiper-inner">
+								<div class="swiper item-view__other-brands">
+
+									<div class="swiper-wrapper popular-models__swiper-wrapper ">
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/other-brands1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi 12X</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 12 600 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/other-brands2.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 20 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/other-brands3.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон Apple iPhone 13 Pro Max 256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 25 700 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/other-brands4.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI P50
+																Pro 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 25 700 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models5.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide popular-models__slide">
+											<a class="popular-models__link" href="#">
+												<div class="popular-models__card">
+													<div class="popular-models__box-img">
+														<img class="popular-models__img"
+															src="@img/item-view/slider/same-models1.png" alt="photo">
+													</div>
+													<div class="popular-models__info">
+														<div class="popular-models__name">
+															<p>Смартфон HUAWEI
+																P50 Pocket 8/256 ГБ</p>
+														</div>
+														<div class="popular-models__box">
+															<p class="popular-models__price">от 41 900 ₸</p>
+															<button class="popular-models__btn">
+																<svg width="17" height="21" viewBox="0 0 17 21"
+																	fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.3237 1.15806C7.3237 0.51848 7.84527 0 8.48865 0C9.13204 0 9.6536 0.518481 9.6536 1.15806V18.915C9.6536 19.5545 9.13204 20.073 8.48865 20.073C7.84527 20.073 7.3237 19.5545 7.3237 18.915V1.15806Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M0.333984 6.56234C0.333984 5.92276 0.855551 5.40428 1.49894 5.40428C2.14232 5.40428 2.66389 5.92276 2.66389 6.56234V15.0548C2.66389 15.6943 2.14232 16.2128 1.49894 16.2128C0.855551 16.2128 0.333984 15.6943 0.333984 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																	<path
+																		d="M14.3134 6.56234C14.3134 5.92276 14.835 5.40428 15.4784 5.40428C16.1217 5.40428 16.6433 5.92276 16.6433 6.56234V15.0548C16.6433 15.6943 16.1217 16.2128 15.4784 16.2128C14.835 16.2128 14.3134 15.6943 14.3134 15.0548V6.56234Z"
+																		fill="#BFC7D2" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+
+
+									<div class=" item-view__other-brands-scrollbar"></div>
+								</div>
+								<div class="slider_button_wrapper-prev">
+									<div class="popular-models__btn-prev ">
+										<img src="@img/icons/arrow-next.svg" alt="arrow">
+									</div>
+								</div>
+								<div class="slider_button_wrapper-next">
+									<div class="item-view__other-brands-btn">
+										<img src="@img/icons/arrow-next.svg" alt="arrow">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+	</main>
+	@@include("html/footer.html")
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://prrashi.github.io/rateYo/bower_components/jquery-rateyo/min/jquery.rateyo.min.js"></script>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
