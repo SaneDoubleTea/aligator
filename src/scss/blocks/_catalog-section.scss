@@ -4,7 +4,7 @@
     &__title {
         margin-bottom: 33px;
         font-weight: 600;
-        font-size: 60px;
+        font-size: 45px;
         line-height: 72px;
         color: $dark;
     }
@@ -15,12 +15,14 @@
         gap: 8px;
     }
     &-item {
-        max-width: 200px;
+        max-width: 189px;
         width: 100%;
-        height: 500px;
+        // height: 500px;
         padding: 10px 14px 32px 10px;
         background-color: rgba(241, 244, 243, 0.36);
         border-radius: 10px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+
         transition: all 0.5s ease-out;
         &:hover {
             .main-catalog-item__heading {
@@ -43,10 +45,12 @@
             justify-content: space-between;
             flex-direction: column;
             padding-top: 33px;
-            padding-bottom: 24px;
-            width: 177px;
-            height: 176px;
-            margin-bottom: 13px;
+            padding-bottom: 10px;
+            max-width: 177px;
+            width: 100%;
+            height: 155px;
+            border-radius: 10px;
+            margin-bottom: 10px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease-out;
@@ -70,7 +74,10 @@
             margin-left: 8px;
             font-weight: 500;
             font-size: 14px;
-            line-height: 211%;
+            line-height: 1;
+            + .main-catalog-item__link {
+                margin-top: 15px;
+            }
             color: #898989;
             a {
                 color: inherit;
@@ -121,52 +128,72 @@
 .main-popular-models {
     max-width: 1920px;
     margin: 0 auto;
-    background: #f9f9f9;
+    background: #f2f2f2;
     border-radius: 30px;
-    padding: 20px 0;
+    padding: 10px 0;
+	.container {
+		max-width: 1475px;
+	}
+    .gadgets__pop {
+        box-shadow: none;
+    }
+    &__swiper.swiper {
+        padding: 0 15px;
+        margin-left: -15px;
+    }
     .popular-models {
         padding: 0;
         margin-bottom: 0;
-        height: 600px;
+        // height: 600px;
+        background: #f2f2f2;
 
         &__swiper-inner {
             max-width: 100%;
-            height: 429px;
+            height: auto;
+            // margin-bottom: 20px;
         }
-
+        .swiper-wrapper {
+            padding: 10px 0 5px;
+            margin-bottom: 15px;
+        }
         &__title {
             margin-bottom: 0;
             font-weight: 600;
-            font-size: 60px;
+            font-size: 45px;
             line-height: 72px;
             color: $dark;
         }
 
         &__box-img {
-            height: 288px;
+            max-width: 170px;
+            height: 210px;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         &__name {
-            font-size: 19px;
-            line-height: 0.95;
+            font-size: 16px;
+            line-height: 1.1;
             color: $dark;
         }
         &__slide {
             max-width: 100% !important;
         }
-
         &__card {
             width: 100%;
-            height: 365px;
-            padding: 0 25px 16px 30px;
+            height: 290px;
+            padding: 5px 25px 16px 30px;
             transition: all 0.3s;
+            box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
         }
         &__price {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         &__link {
-            max-width: 287px;
+            max-width: 220px;
             width: 100%;
         }
 
@@ -177,6 +204,9 @@
 
         &__btn-next {
             right: 0;
+        }
+        &__scrollbar {
+            cursor: grab;
         }
     }
     .btn-more {
@@ -215,14 +245,15 @@
 .banner {
     flex: 1 1 30%;
     position: relative;
-    width: 473px;
-    height: 339px;
+    // width: 473px;
+    height: 280px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: all 0.3s ease-out;
     border-radius: 10px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+    transition: all 0.3s ease-out;
 
     img {
         position: absolute;
@@ -299,26 +330,31 @@
 .new-models {
     max-width: 1920px;
     margin: 0 auto;
-    background: #f9f9f9;
+    background: #f2f2f2;
     border-radius: 30px;
     &__wrapper {
-        padding: 23px 22px 40px;
+        // padding: 23px 22px 40px;
+        padding: 23px 0 40px;
     }
 
     &__items {
         display: flex;
         flex-wrap: wrap;
         border-radius: 10px;
-        gap: 22px;
+        gap: 23px;
         margin-bottom: 30px;
     }
 
     &__img {
-        height: 193px;
+        height: 160px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 11px;
+		overflow: hidden;
+        img {
+            height: 100%;
+        }
     }
 
     &__title {
@@ -331,14 +367,15 @@
 
     &__card {
         background-color: #fff;
-        width: 216px;
-        height: 330px;
-        padding: 9px 17px 23px 20px;
+        width: 210px;
+        height: 300px;
+        padding: 9px 15px 23px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: all 0.3s;
         border-radius: 10px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+        transition: all 0.3s;
     }
 
     &__link:hover {
@@ -366,7 +403,7 @@
 
     &__price {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.1;
         color: $dark;
         margin-right: 7px;
@@ -396,6 +433,7 @@
             width: 100%;
             height: 8px;
             background: transparent;
+            cursor: grab;
             .swiper-scrollbar-drag {
                 background: rgba(217, 217, 217, 0.5);
                 border-radius: 20px;
@@ -439,23 +477,27 @@
     flex-direction: column;
     justify-content: space-between;
     width: 152px;
-    height: 262px;
-    padding: 18px 14px 10px;
+    height: 220px;
+    padding: 10px 14px 10px;
     background: #ffffff;
     border-radius: 22px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+
     &__img {
         display: flex;
         justify-content: center;
         max-height: 150px;
-        height: 115px;
+        height: 100px;
+        overflow: hidden;
     }
     &__desc {
-        height: 70px;
-        overflow: hidden;
+        height: 75px;
         font-weight: 500;
         font-size: 14px;
         line-height: 105%;
         color: #757575;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__price {
         font-weight: 700;
@@ -472,6 +514,7 @@
         border-radius: 15px;
         display: flex;
         padding: 50px 37px 40px 37px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
     }
 
     &__title {
@@ -489,6 +532,7 @@
     &__info {
         margin-right: auto;
         max-width: 551px;
+        padding-top: 10px;
     }
 
     &__text {

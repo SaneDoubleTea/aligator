@@ -9,6 +9,7 @@
 	@@include("html/compare_pop-up-window.html")
 	@@include("html/login_modal.html")
 	@@include("html/history-popup.html")
+	@@include("html/modal_control-btns.html")
 	<main>
 		<section class="breadcrumbs">
 			<div class="container">
@@ -62,8 +63,8 @@
 							<div class="filters__item filters__options">
 								<div class="filters__item-box">
 									<p class="filters__item-title filters__item-title-options ">Фильтр по параметрам</p>
-									<button class="filters__item-plus-btn filters__item-plus-btn-options"><img
-											src="@img/icons/plus.svg" alt="plus-icon"></button>
+									<button class="filters__item-plus-btn"><img src="@img/icons/plus.svg"
+											alt="plus-icon"></button>
 								</div>
 								<ul class="filters__list filters__list-options">
 
@@ -82,14 +83,14 @@
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 9AT <span
 													class="filters__list-new new">New</span></a>
-											<p class="filters__list-price">от 12 600 ₸</p>
+											<p class="filters__list-price">от 12 600 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item">
 										<img src="@img/item-view/2.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 10A </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item">
@@ -97,21 +98,21 @@
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 11 <span
 													class="filters__list-new new">New</span></a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item">
 										<img src="@img/item-view/4.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 10 Prime </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item">
 										<img src="@img/item-view/5.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 9A </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item hidden">
@@ -119,14 +120,14 @@
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 9AT <span
 													class="filters__list-new new">New</span></a>
-											<p class="filters__list-price">от 12 600 ₸</p>
+											<p class="filters__list-price">от 12 600 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item hidden">
 										<img src="@img/item-view/2.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 10A </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item hidden">
@@ -134,21 +135,21 @@
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 11 <span
 													class="filters__list-new new">New</span></a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item hidden">
 										<img src="@img/item-view/4.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 10 Prime </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 									<li class="filters__list-item hidden">
 										<img src="@img/item-view/5.png" alt="photo">
 										<div class="filters__list-box">
 											<a href="#" class="filters__list-name">Redmi 9A </a>
-											<p class="filters__list-price">от 36 200 ₸</p>
+											<p class="filters__list-price">от 36 200 ₽ </p>
 										</div>
 									</li>
 								</ul>
@@ -238,7 +239,11 @@
 						<div class="item-view__users-box">
 							<div class="item-view__users-nav">
 
-								<button class="item-view__compare">В сравнение <span>3</span></button>
+								<button class="item-view__compare">
+									<span class="item-view__compare-text">В сравнение</span>
+									<span class="item-view__compare-text-in">В сравнении</span>
+									<span>3</span>
+								</button>
 								<div class="item-view__label">
 									<p>Добавлено к сравнению</p>
 									<a class="item-view__label-link" href="#"
@@ -255,395 +260,331 @@
 											fill="#9BA1AA" />
 									</svg>
 
-									В избранное</button>
+									<span class="item-view__like-text">В избранное</span>
+									<span class="item-view__like-text-in">В избранном</span>
+								</button>
 
 							</div>
 						</div>
 
 						<div class="item-view__content-box">
-							<div class="item-view__content-gallery">
+							<div class="item-view__content-gallery-box">
+								<div class="item-view__content-gallery">
 
-								<div thumbsSlider="" class="swiper item-view__thumbs-swiper ">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide item-view__thumbs-slide">
-											<!-- ======== -->
-											<div class="item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/characteristic-color1.png" alt="photo">
+									<div thumbsSlider="" class="swiper item-view__thumbs-swiper ">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide item-view__thumbs-slide">
+												<!-- ======== -->
+												<div class="item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/characteristic-color1.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
 
-										<!-- OPEN FENCYBOX SLIDES -->
-										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/characteristic-color1.png" alt="photo">
+											<!-- OPEN FENCYBOX SLIDES -->
+											<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/characteristic-color1.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/2.png" alt="photo">
+											<div class="swiper-slide item-view__thumbs-slide fencyClosed">
+												<div class=" item-view__thumbs-img item-view__thumbs-img--active">
+													<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color2.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color3.png" alt="photo">
+												</div>
+												<div class="item-view__thumbs-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+												<!-- ======== -->
 											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<div class="swiper-slide item-view__thumbs-slide fencyClosed">
-											<div class=" item-view__thumbs-img item-view__thumbs-img--active">
-												<img src="@img/item-view/slider-thumbs/4.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color2.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color3.png" alt="photo">
-											</div>
-											<div class="item-view__thumbs-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-											<!-- ======== -->
-										</div>
-										<!-- =================================-->
-
-
-										<button class="item-view__thumbs-btn">Еще <span>12</span></button>
-
-									</div>
-								</div>
-
-								<div class="swiper item-view__slider">
-									<div class="item-view__slider-mobile-top">
-										<span class="item-view__slider-mobile-top-title">23 фото</span>
-										<span class="item-view__slider-mobile-cross">
-											<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path d="M13.9999 13.9999L1 1M14 1L1 14" stroke="#30CA51"
-													stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</span>
-
-									</div>
-									<div class="swiper-wrapper">
-										<div class="swiper-slide item-view__slide">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-
-										<!-- fency more slides -->
-										<div class="swiper-slide item-view__slide fencyClosed">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide fencyClosed">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide fencyClosed">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide fencyClosed">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<div class="swiper-slide item-view__slide fencyClosed">
-											<div class="item-view__slide-img item-view__slide-img--active">
-												<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/5.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img">
-												<img src="@img/item-view/3.png" alt="photo">
-											</div>
-											<div class="item-view__slide-img ">
-												<img src="@img/item-view/characteristic-color4.png" alt="photo">
-											</div>
-										</div>
-										<!-- =============================== -->
+											<!-- =================================-->
 
 
-									</div>
-									<div class="swiper-button-prev item-view__prev item-view__btn">
+											<button class="item-view__thumbs-btn">Еще <span>12</span></button>
 
-									</div>
-									<div class="swiper-button-next item-view__next item-view__btn">
-									</div>
-									<div class="swiper-pagination item-view__pagination"></div>
-
-
-									<div class="item-view__slider-cross">
-										<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M31.9998 31.9998L2 2M32 2L2 32" stroke="black" stroke-width="3"
-												stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-
-									</div>
-								</div>
-
-
-							</div>
-							<div class="item-view__content-characteristic">
-								<div class="item-view__content-price">
-									<div class="item-view__content-price-box">
-										<span class="item-view__content-from">от</span>45 700₸<span
-											class="item-view__content-to">до</span>78 790₸
-									</div>
-									<div class="item-view__content-compare_price">Сравнить цены</div>
-								</div>
-
-								<div class="item-view__content-color">
-									<p class="item-view__content-color-title item-view__content-title">
-										Цвет: <span>Зеленый</span>
-									</p>
-									<div class="item-view__content-color-box">
-										<div
-											class="item-view__content-color-card item-view__content-color-card--active">
-											<img src="@img/item-view/characteristic-color1.png" alt="photo-color">
-										</div>
-
-										<div class="item-view__content-color-card">
-											<img src="@img/item-view/characteristic-color2.png" alt="photo-color">
-										</div>
-
-										<div class="item-view__content-color-card">
-											<img src="@img/item-view/characteristic-color3.png" alt="photo-color">
-										</div>
-
-										<div class="item-view__content-color-card">
-											<img src="@img/item-view/characteristic-color4.png" alt="photo-color">
 										</div>
 									</div>
-									<div class="item-view__content-color-mob-box ">
-										<div
-											class="item-view__content-color-mob-card item-view__content-color-mob--active">
-											<span
-												class="item-view__content-color-mob item-view__content-color-mob--grey "></span>
-										</div>
-										<div class="item-view__content-color-mob-card"><span
-												class="item-view__content-color-mob item-view__content-color-mob--black"></span>
-										</div>
-										<div class="item-view__content-color-mob-card"><span
-												class="item-view__content-color-mob item-view__content-color-mob--blue"></span>
-										</div>
-										<div class="item-view__content-color-mob-card">
-											<span
-												class="item-view__content-color-mob item-view__content-color-mob--black">
+
+									<div class="swiper item-view__slider">
+										<div class="item-view__slider-mobile-top">
+											<span class="item-view__slider-mobile-top-title">23 фото</span>
+											<span class="item-view__slider-mobile-cross">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.9999 13.9999L1 1M14 1L1 14" stroke="#30CA51"
+														stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
 											</span>
+
+										</div>
+										<div class="swiper-wrapper">
+											<div class="swiper-slide item-view__slide">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+
+											<!-- fency more slides -->
+											<div class="swiper-slide item-view__slide fencyClosed">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide fencyClosed">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide fencyClosed">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide fencyClosed">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<div class="swiper-slide item-view__slide fencyClosed">
+												<div class="item-view__slide-img item-view__slide-img--active">
+													<img src="@img/item-view/slider-thumbs/1.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/5.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img">
+													<img src="@img/item-view/3.png" alt="photo">
+												</div>
+												<div class="item-view__slide-img ">
+													<img src="@img/item-view/characteristic-color4.png" alt="photo">
+												</div>
+											</div>
+											<!-- =============================== -->
+
+
+										</div>
+										<div class="swiper-button-prev item-view__prev item-view__btn">
+
+										</div>
+										<div class="swiper-button-next item-view__next item-view__btn">
+										</div>
+										<div class="swiper-pagination item-view__pagination"></div>
+
+
+										<div class="item-view__slider-cross">
+											<svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M31.9998 31.9998L2 2M32 2L2 32" stroke="black" stroke-width="3"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+
 										</div>
 									</div>
 
-									<label class="sidebar-label item-view__content-label">
-										<input class=" sidebar__manufacturer-checkbox main-checkbox" type="checkbox" />
-										<span class="custom-checkbox-btn"></span>
-										<p>Любой цвет</p>
-									</label>
-								</div>
 
-								<div class="item-view__content-configuration">
-									<p class="item-view__content-title item-view__content-configuration-title">
-										Конфигурация</p>
-									<div class="item-view__content-configuration-box">
-										<div
-											class="item-view__content-configuration-item item-view__content-configuration-item--active">
-											256ГБ</div>
-										<div class="item-view__content-configuration-item">512ГБ</div>
-									</div>
 								</div>
-
 								<div class="item-view__content-characteristics">
 									<p class="item-view__content-title item-view__content-characteristic-title">
 										Характеристики
@@ -725,9 +666,211 @@
 												class="item-view__content-characteristic-descr content-characteristic-descr">
 												5000 мАч</p>
 										</div>
+
 									</div>
 									<button class="item-view__content-characteristic-btn">Все характеристики</button>
 								</div>
+							</div>
+							<div class="item-view__content-characteristic">
+								<div class="item-view__content-price">
+									<div class="item-view__content-price-box">
+										<span class="item-view__content-from">от</span>45 70 ₽ <span
+											class="item-view__content-to">до</span>78 79 ₽
+									</div>
+									<div class="item-view__content-compare_price" id="item-view-smooth-to-price">
+										Сравнить цены</div>
+								</div>
+
+								<div class="item-view__content-list-shop list-shop">
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Harddisk.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-green.svg" alt="elipse">
+												51 200 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Carcam
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-white.svg" alt="elipse">
+												67 768 ₽
+											</div>
+
+										</div>
+									</div>
+
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Rino.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-white.svg" alt="elipse">
+												49 960 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Aliexpress.com
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-green.svg" alt="elipse">
+												69 050 ₽
+											</div>
+										</div>
+									</div>
+
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Xiaomi.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-yellow.svg" alt="elipse">
+												46 888 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Harddisk.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-green.svg" alt="elipse">
+												51 200 ₽
+											</div>
+										</div>
+									</div>
+
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Carcam
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-white.svg" alt="elipse">
+												67 768 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Aliexpress.com
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-black.svg" alt="elipse">
+												64 400 ₽
+											</div>
+										</div>
+									</div>
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Aliexpress.com
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-green.svg" alt="elipse">
+												69 050 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Xiaomi.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-yellow.svg" alt="elipse">
+												46 888 ₽
+											</div>
+										</div>
+									</div>
+
+									<div class="list-shop__items">
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Aliexpress.com
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-black.svg" alt="elipse">
+												64 400 ₽
+											</div>
+										</div>
+										<div class="list-shop__item">
+											<a href="#!" class="list-shop__name">
+												Rino.kz
+											</a>
+											<div class="list-shop__price">
+												<img src="@img/icons/elipse-white.svg" alt="elipse">
+												49 960 ₽
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="item-view__content-offer-btn" id="moreOffersItemPage">Ещё
+									предложения</button>
+
+								<div class="item-view__content-color">
+									<p class="item-view__content-color-title item-view__content-title">
+										Цвет: <span>Зеленый</span>
+									</p>
+									<div class="item-view__content-color-box">
+										<div
+											class="item-view__content-color-card item-view__content-color-card--active">
+											<img src="@img/item-view/characteristic-color1.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color2.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color3.png" alt="photo-color">
+										</div>
+
+										<div class="item-view__content-color-card">
+											<img src="@img/item-view/characteristic-color4.png" alt="photo-color">
+										</div>
+									</div>
+									<div class="item-view__content-color-mob-box ">
+										<div
+											class="item-view__content-color-mob-card item-view__content-color-mob--active">
+											<span
+												class="item-view__content-color-mob item-view__content-color-mob--grey "></span>
+										</div>
+										<div class="item-view__content-color-mob-card"><span
+												class="item-view__content-color-mob item-view__content-color-mob--black"></span>
+										</div>
+										<div class="item-view__content-color-mob-card"><span
+												class="item-view__content-color-mob item-view__content-color-mob--blue"></span>
+										</div>
+										<div class="item-view__content-color-mob-card">
+											<span
+												class="item-view__content-color-mob item-view__content-color-mob--black">
+											</span>
+										</div>
+									</div>
+
+									<label class="sidebar-label item-view__content-label">
+										<input class=" sidebar__manufacturer-checkbox main-checkbox" type="checkbox" />
+										<span class="custom-checkbox-btn"></span>
+										<p>Любой цвет</p>
+									</label>
+								</div>
+
+								<div class="item-view__content-configuration">
+									<p class="item-view__content-title item-view__content-configuration-title">
+										Конфигурация</p>
+									<div class="item-view__content-configuration-box">
+										<div
+											class="item-view__content-configuration-item item-view__content-configuration-item--active">
+											256ГБ</div>
+										<div class="item-view__content-configuration-item">512ГБ</div>
+									</div>
+								</div>
+
+
 							</div>
 						</div>
 
@@ -754,7 +897,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="where-buy__items">
+							<div class="where-buy__items" id="whereBuyItemPage">
 								<div class="where-buy__item">
 									<div class="where-buy__content">
 										<div class="where-buy__img">
@@ -772,7 +915,7 @@
 									<div class="where-buy__shops">
 										<div class="where-buy__shops-box">
 											<p class="where-buy__color where-buy__color--blue"></p>
-											<p class="where-buy__price">59 200 ₸</p>
+											<p class="where-buy__price">59 200 ₽ </p>
 										</div>
 										<div class="where-buy__shops-logo">
 											<img src="@img/icons/logo-ozone.svg" alt="logo-ozone">
@@ -802,7 +945,7 @@
 									<div class="where-buy__shops">
 										<div class="where-buy__shops-box">
 											<p class="where-buy__color where-buy__color--blue"></p>
-											<p class="where-buy__price">46 500 ₸</p>
+											<p class="where-buy__price">46 500 ₽ </p>
 										</div>
 										<div class="where-buy__shops-logo">
 											<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
@@ -833,7 +976,7 @@
 									<div class="where-buy__shops">
 										<div class="where-buy__shops-box">
 											<p class="where-buy__color where-buy__color--blue"></p>
-											<p class="where-buy__price">59 200 ₸</p>
+											<p class="where-buy__price">59 200 ₽ </p>
 										</div>
 										<div class="where-buy__shops-logo">
 											<img src="@img/icons/logo-aliexpress.svg" alt="logo-aliexpress">
@@ -863,7 +1006,7 @@
 									<div class="where-buy__shops">
 										<div class="where-buy__shops-box">
 											<p class="where-buy__color where-buy__color--blue"></p>
-											<p class="where-buy__price">46 500 ₸</p>
+											<p class="where-buy__price">46 500 ₽ </p>
 										</div>
 										<div class="where-buy__shops-logo">
 											<img src="@img/icons/dns.svg" alt="logo-dns">
@@ -2081,7 +2224,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="item-view__same-models popular-models">
+						<div class="item-view__same-models popular-models" id="popularModelsItemPage">
 							<h3 class="popular-models__title ">Похожие модели</h3>
 
 							<div class="popular-models__swiper-inner">
@@ -2101,7 +2244,7 @@
 															<p>Смартфон Xiaomi 12X</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 12 600 ₸</p>
+															<p class="popular-models__price">от 12 600 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2134,7 +2277,7 @@
 															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 20 900 ₸</p>
+															<p class="popular-models__price">от 20 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2167,7 +2310,7 @@
 															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 25 700 ₸</p>
+															<p class="popular-models__price">от 25 700 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2201,7 +2344,7 @@
 																8A 4/64 ГБ CN Черный</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 25 700 ₸</p>
+															<p class="popular-models__price">от 25 700 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2235,7 +2378,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2268,7 +2411,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2301,7 +2444,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2334,7 +2477,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2376,11 +2519,12 @@
 
 						</div>
 
-						<div class="item-view__same-models item-view__other-brands popular-models">
+						<div class="item-view__same-models item-view__other-brands popular-models"
+							id="popularModelsItemPage">
 							<h3 class="popular-models__title ">Другие бренды</h3>
 
 							<div class="popular-models__swiper-inner">
-								<div class="swiper item-view__other-brands">
+								<div class="swiper popular-models__swiper item-view__same-models-swiper">
 
 									<div class="swiper-wrapper popular-models__swiper-wrapper ">
 
@@ -2396,7 +2540,7 @@
 															<p>Смартфон Xiaomi 12X</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 12 600 ₸</p>
+															<p class="popular-models__price">от 12 600 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2429,7 +2573,7 @@
 															<p>Смартфон Xiaomi POCO X3 Pro 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 20 900 ₸</p>
+															<p class="popular-models__price">от 20 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2462,7 +2606,7 @@
 															<p>Смартфон Apple iPhone 13 Pro Max 256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 25 700 ₸</p>
+															<p class="popular-models__price">от 25 700 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2496,7 +2640,7 @@
 																Pro 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 25 700 ₸</p>
+															<p class="popular-models__price">от 25 700 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2530,7 +2674,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2563,7 +2707,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2596,7 +2740,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2629,7 +2773,7 @@
 																P50 Pocket 8/256 ГБ</p>
 														</div>
 														<div class="popular-models__box">
-															<p class="popular-models__price">от 41 900 ₸</p>
+															<p class="popular-models__price">от 41 900 ₽ </p>
 															<button class="popular-models__btn">
 																<svg width="17" height="21" viewBox="0 0 17 21"
 																	fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2654,15 +2798,15 @@
 
 
 
-									<div class=" item-view__other-brands-scrollbar"></div>
+									<div class=" popular-models__scrollbar"></div>
 								</div>
 								<div class="slider_button_wrapper-prev">
-									<div class="popular-models__btn-prev ">
+									<div class="popular-models__btn-prev">
 										<img src="@img/icons/arrow-next.svg" alt="arrow">
 									</div>
 								</div>
 								<div class="slider_button_wrapper-next">
-									<div class="item-view__other-brands-btn">
+									<div class="popular-models__btn-next">
 										<img src="@img/icons/arrow-next.svg" alt="arrow">
 									</div>
 								</div>
@@ -2670,8 +2814,6 @@
 							</div>
 
 						</div>
-
-
 
 					</div>
 				</div>

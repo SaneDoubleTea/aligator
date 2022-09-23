@@ -1,5 +1,4 @@
 .breadcrumbs {
-  margin-bottom: 3px;
 
   &__list {
     display: flex;
@@ -13,6 +12,7 @@
   &__item {
     position: relative;
     padding-right: 13px;
+    transition: all .3s ease;
 
     +.breadcrumbs__item {
       margin-left: 10px;
@@ -31,6 +31,10 @@
       right: 0;
       top: 50%;
       transform: translateY(-25%);
+    }
+
+    &:hover{
+      color: $accent;
     }
 
     &:last-child {

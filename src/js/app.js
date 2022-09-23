@@ -8,6 +8,23 @@ import Swiper, { Navigation, Pagination, EffectFade, Scrollbar, Thumbs, Autoplay
 import Accordion from 'accordion-js';
 import MicroModal from 'micromodal';
 
+
+
+
+
+let compareDropdownsInModal = document.querySelectorAll('.dropdown-box');
+
+compareDropdownsInModal.forEach((el, i) => {
+    let dropdownItems = el.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach(el => {
+        el.addEventListener('click', () => {
+            dropdownItems.forEach(el => el.classList.remove('dropdown-item-active'))
+            el.classList.add('dropdown-item-active')
+        })
+    })
+})
+
+
 var swiper = new Swiper('.item-view__thumbs-swiper', {
     spaceBetween: 7,
     slidesPerView: 4,
@@ -36,6 +53,38 @@ var swiper2 = new Swiper('.item-view__slider', {
         swiper: swiper,
     },
 });
+
+
+
+let tableClearBtn = document.querySelector('.compare-table__clear-table');
+let tableClearableRows = document.querySelectorAll('.row-hidable');
+
+if (document.querySelector('.sticky-row-item')) {
+    let stickyRow = document.querySelector('.sticky-row-item'),
+        rowActive = stickyRow.querySelector('.row.row--sticky--active'),
+        activeRowItems = rowActive.querySelectorAll('.row-item')
+
+    tableClearBtn.addEventListener('click', () => {
+
+        for (let i = 1; i < activeRowItems.length; i++) {
+            activeRowItems[i].innerHTML = ''
+        }
+
+
+        tableClearableRows.forEach(el => {
+            let rows = el.querySelectorAll('.row');
+            rows.forEach(el => {
+                let divs = el.querySelectorAll('.row-item')
+                for (let i = 1; i < divs.length; i++) {
+                    divs[i].innerHTML = ''
+                }
+            })
+        })
+    })
+}
+
+
+
 
 function setActiveCatalogView() {
     let catalogRow = document.querySelector('.catalog__view-row');
@@ -193,10 +242,7 @@ function loginModal() {
 loginModal();
 
 function headerFunction() {
-    const slides = document.querySelectorAll('.header_swiper_slide-item');
-
-    const menuItems = document.querySelectorAll('.menu_item'),
-        swiperHeader = document.querySelector('.swiper.headerSwiperCategories');
+    const menuItems = document.querySelectorAll('.menu_item');
     let mobileMenuSidebarArrow = document.querySelector('.mobile__menu-sidebar-arrow');
     let mobileMenuSidebarCross = document.querySelector('.mobile__menu-sidebar-cross');
     let mobileMenuSidebar = document.querySelector('.mobile__menu-sidebar');
@@ -220,51 +266,66 @@ function headerFunction() {
 
     let userLogin = document.querySelector('.--user--login');
     let userLoginBtn = document.querySelector('.login_modal-sign-in-btn');
+    let headerSliderInterval;
+
 
     userLoginBtn.addEventListener('click', () => {
         userLogin.classList.add('--user--login--active');
     });
+    userLogin.addEventListener('click', () => {
+        setTimeout(() => {
+            document.querySelector('.login_modal-input-email>input').blur()
+        })
+    })
 
-    let swiperHeaderInitilization = new Swiper('.headerSwiperCategories', {});
 
+    let categoryItems = document.querySelectorAll('.menu_category-items')
     menuItems.forEach((item, index) => {
+
         item.addEventListener('mouseover', () => {
-            swiperHeader.classList.add('active');
-        });
-        item.addEventListener('mouseover', () => {
-            swiperHeaderInitilization.slideTo(index);
+
+            categoryItems.forEach(el => el.classList.remove('menu_category-items-active'));
+            categoryItems[index].classList.add('menu_category-items-active')
+            document.querySelector('.menu_category-items-wrapper').classList.remove('to-top')
+            document.querySelector('.menu_category-items-wrapper').classList.add('to-bottom')
             menuItems.forEach((menuItem) => {
                 menuItem.classList.remove('active');
             });
             item.classList.add('active');
+            document.querySelector('.box-w').classList.add('active')
+            // swiperHeader.classList.add('active');
 
-            if (!swiperHeaderInitilization.isEnd) {
-                arrowRightHeader[0].classList.add('visible');
-                arrowRightHeader[0].classList.remove('hidden');
-            }
-            if (!swiperHeaderInitilization.isBeginning) {
-                arrowLeftHeader[0].classList.add('visible');
-                arrowLeftHeader[0].classList.remove('hidden');
-            }
-            if (swiperHeaderInitilization.isEnd) {
-                arrowRightHeader[0].classList.add('hidden');
-                arrowRightHeader[0].classList.remove('visible');
-            }
-            if (swiperHeaderInitilization.isBeginning) {
-                arrowLeftHeader[0].classList.add('hidden');
-                arrowLeftHeader[0].classList.remove('visible');
-            }
+            // if (!swiperHeaderInitilization.isEnd) {
+            //     arrowRightHeader[0].classList.add('visible');
+            //     arrowRightHeader[0].classList.remove('hidden');
+            // }
+            // if (!swiperHeaderInitilization.isBeginning) {
+            //     arrowLeftHeader[0].classList.add('visible');
+            //     arrowLeftHeader[0].classList.remove('hidden');
+            // }
+            // if (swiperHeaderInitilization.isEnd) {
+            //     arrowRightHeader[0].classList.add('hidden');
+            //     arrowRightHeader[0].classList.remove('visible');
+            // }
+            // if (swiperHeaderInitilization.isBeginning) {
+            //     arrowLeftHeader[0].classList.add('hidden');
+            //     arrowLeftHeader[0].classList.remove('visible');
+            // }
+            // swiperHeader.classList.remove('to-top')
+            // swiperHeader.classList.add('full')
+            // swiperHeaderWrapper.classList.remove('transform')
+            // swiperHeaderWrapper.classList.add('active')
         });
     });
 
-    swiperHeader.addEventListener('mouseleave', function () {
-        this.classList.remove('active');
-        menuItems.forEach((elem) => elem.classList.remove('active'));
-    });
+
     document.querySelector('.menu_wrapper').addEventListener('mouseleave', () => {
-        swiperHeader.classList.remove('active');
+        document.querySelector('.menu_category-items-wrapper').classList.remove('to-bottom')
+        document.querySelector('.menu_category-items-wrapper').classList.add('to-top')
         menuItems.forEach((elem) => elem.classList.remove('active'));
+        document.querySelector('.box-w').classList.remove('active')
     });
+
 
     selectDropDown.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -308,7 +369,7 @@ function headerFunction() {
         search.classList.remove('active');
         searchBtn.classList.remove('active');
         dropDown.classList.remove('active');
-        document.body.classList.add('disable-scroll');
+        document.body.classList.toggle('disable-scroll');
     });
 
     headerBurger.addEventListener('click', () => {
@@ -338,7 +399,8 @@ function headerFunction() {
         document.body.classList.remove('disable-scroll');
     });
 
-    swiperHeader.style.top = `${headerMenu.offsetHeight}px`;
+    // swiperHeader.style.top = `${headerMenu.offsetHeight}px`;
+    document.querySelector('.box-w ').style.top = `${headerMenu.offsetHeight}px`;
 
     mobileMenuCatalogBtn.addEventListener('click', () => {
         mobileMenuSidebar.classList.add('active');
@@ -402,6 +464,7 @@ function headerFunction() {
                 el.classList.remove('visible');
                 el.classList.add('hidden');
             }
+
         });
     });
 
@@ -440,12 +503,43 @@ function headerFunction() {
     mobileMenuSidebarCatalogCross.addEventListener('click', () => {
         itemsCatalogSidebar.classList.remove('active');
     });
+
+
+
+
+
+    let headerMainWrapper = document.querySelector('.header_main_wrapper');
+
+    window.addEventListener('scroll', (e) => {
+        if (window.scrollY >= headerMainWrapper.offsetHeight + 70) {
+            headerMainWrapper.classList.add('header_main_wrapper-fixed')
+        } else {
+            headerMainWrapper.classList.remove('header_main_wrapper-fixed')
+        }
+    })
+
 }
 headerFunction();
 
 let itemPage = document.querySelector('.item-view');
 // if (window.location.pathname == '/item-page.html') {
 function itemViewPageFunction() {
+    const scrollTo = (element) => {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop,
+        });
+        console;
+    };
+    document.getElementById('item-view-smooth-to-price').addEventListener('click', () => {
+        scrollTo(document.getElementById('whereBuyItemPage'));
+    });
+    document.getElementById('moreOffersItemPage').addEventListener('click', () => {
+        scrollTo(document.getElementById('popularModelsItemPage'));
+    });
+
+
     //--------------tabs----------------
     let tab = function () {
         let tabActive = document.querySelectorAll('.item-view__tab'),
@@ -473,6 +567,17 @@ function itemViewPageFunction() {
                     : item.classList.remove('tab-box--active');
             });
         }
+
+
+        document.querySelector('.item-view__content-characteristic-btn').addEventListener('click', function () {
+            tabContent.forEach(el => el.classList.remove('tab-box--active'))
+            tabContent[2].classList.add('tab-box--active');
+            tabActive.forEach((item) => {
+                item.classList.remove('item-view__tab--active')
+            });
+            tabActive[2].classList.add('item-view__tab--active')
+            scrollTo(tabContent[2])
+        })
     };
     tab();
 
@@ -505,7 +610,8 @@ function itemViewPageFunction() {
     const compareBtnLabel = document.querySelector('.item-view__label');
     if (compareBtn) {
         let compareTimeout;
-        compareBtn.addEventListener('click', function () {
+        compareBtn.addEventListener('click', function (e) {
+            e.stopPropagation()
             compareBtn.classList.toggle('item-view__compare--active');
             if (compareBtn.classList.contains('item-view__compare--active')) {
                 compareBtnLabel.classList.add('active');
@@ -642,7 +748,7 @@ function itemViewPageFunction() {
     });
 
     if (window.innerWidth > 768) {
-        itemListSwiper.addEventListener('click', () => {});
+        itemListSwiper.addEventListener('click', () => { });
     }
 
     itemViewColorBtns.forEach((el) => {
@@ -726,12 +832,14 @@ function itemViewPageFunction() {
     let filterModelsbtn = document.querySelector('.filters__item-btn-models');
 
     filterBrandsbtn.addEventListener('click', () => {
-        for (let i = 2; i <= filtersBrandsItemPage.length; i++) {
+        filterBrandsbtn.classList.toggle('clicked')
+        for (let i = 2; i < filtersBrandsItemPage.length; i++) {
             filtersBrandsItemPage[i].classList.toggle('hidden');
         }
     });
     filterModelsbtn.addEventListener('click', () => {
-        for (let i = 5; i <= filtersModelsListItem.length; i++) {
+        filterModelsbtn.classList.toggle('clicked')
+        for (let i = 5; i < filtersModelsListItem.length; i++) {
             filtersModelsListItem[i].classList.toggle('hidden');
         }
     });
@@ -809,16 +917,17 @@ function itemViewPageFunction() {
         });
     });
 
-    let moreCharacteristicBtn = document.querySelector('.characteristic__btn-more-bottom');
+    let moreCharacteristicBtn = document.querySelector('.characteristic__btn-more-bottom'),
+        moreCharacteristicBtnArrow = moreCharacteristicBtn.querySelector('span>svg')
     let moreCharacteristicItems = document.querySelectorAll('.characteristic__item-more');
     moreCharacteristicBtn.addEventListener('click', () => {
         moreCharacteristicItems.forEach((el) => el.classList.toggle('active'));
+        moreCharacteristicBtnArrow.classList.toggle('svg-reverse')
     });
 }
 if (itemPage) {
     itemViewPageFunction();
 }
-// }
 
 let showAllBtns = document.querySelectorAll('.show-all');
 let otherToShow = document.querySelectorAll('.other-to-show');
@@ -826,6 +935,7 @@ let otherToShow = document.querySelectorAll('.other-to-show');
 showAllBtns.forEach((el, i) => {
     el.addEventListener('click', () => {
         otherToShow[i].classList.toggle('other-to-show--active');
+        el.classList.toggle('clicked')
     });
 });
 
@@ -851,17 +961,6 @@ moreBtn.forEach((el) => {
         moreBox.classList.toggle('active');
     });
 });
-
-// readMoreBox.forEach((el) => {
-//     el.addEventListener('click', (e) => {
-//         let moreBox = el.querySelector('.more');
-
-//         moreBtn.addEventListener('click', (e) => {
-//             e.stopPropagation();
-//             moreBox.classList.toggle('active');
-//         });
-//     });
-// });
 
 const filterBtns = document.querySelectorAll('.filter-btn');
 const sidebar = document.querySelectorAll('.sidebar');
@@ -929,31 +1028,16 @@ document.body.addEventListener('click', () => {
 });
 
 questionOn.forEach((e) => {
-    // let questionClose = e.querySelector('.question__tip-img');
     e.addEventListener('mouseover', function () {
-        // questionOn.forEach(elem => elem.classList.remove('question--active'))
         e.classList.add('question--active');
     });
     e.addEventListener('mouseleave', function () {
-        // questionOn.forEach(elem => elem.classList.remove('question--active'))
         e.classList.remove('question--active');
     });
-    // questionClose.addEventListener('click', (w) => {
-    //     w.stopPropagation()
-    //     e.classList.remove('question--active')
-    // })
+
 });
 
 function scroll() {
-    const scrollTo = (element) => {
-        window.scroll({
-            behavior: 'smooth',
-            left: 0,
-            top: element.offsetTop,
-        });
-        console;
-    };
-
     document.getElementById('displayFrom').addEventListener('click', () => {
         scrollTo(document.getElementById('displayTo'));
     });
@@ -973,6 +1057,7 @@ function scroll() {
 if (document.querySelector('.gadgets__inner')) {
     scroll();
 }
+
 new Swiper('.catalog-item__slider', {
     modules: [Navigation, Pagination, EffectFade],
     loop: true,
@@ -988,10 +1073,10 @@ new Swiper('.catalog-item__slider', {
 new Swiper('.intro-swiper__swiper', {
     modules: [Navigation, Pagination, Autoplay],
     speed: 600,
-    spaceBetween: 80,
+    spaceBetween: 85,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     navigation: {
@@ -1012,8 +1097,8 @@ new Swiper('.intro-swiper__swiper', {
 
 new Swiper('.main-popular-models__swiper', {
     modules: [Navigation, Pagination, Scrollbar],
-    spaceBetween: 13,
     slidesPerView: 4.7,
+    spaceBetween: 10,
     navigation: {
         nextEl: '.popular-models__btn-next',
         prevEl: '.popular-models__btn-prev',
@@ -1022,21 +1107,22 @@ new Swiper('.main-popular-models__swiper', {
     scrollbar: {
         el: '.popular-models__scrollbar',
         draggable: true,
-        dragSize: 400,
     },
     breakpoints: {
         1280: {
-            slidesPerView: 5,
-            spaceBetween: 17,
+            slidesPerView: 6,
+            spaceBetween: 20,
+            dragSize: 400,
         },
         1024: {
-            slidesPerView: 4.1,
+            slidesPerView: 5,
+            spaceBetween: 18,
         },
         768: {
             slidesPerView: 4.3,
         },
         425: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.6,
         },
         390: {
             slidesPerView: 2.3,
@@ -1046,7 +1132,7 @@ new Swiper('.main-popular-models__swiper', {
         },
         0: {
             spaceBetween: 5,
-            slidesPerView: 2,
+            slidesPerView: 1.9,
         },
     },
 });
@@ -1088,7 +1174,6 @@ new Swiper('.last-added-swiper', {
     scrollbar: {
         el: '.last-added-swiper__scrollbar',
         draggable: true,
-        dragSize: 200,
     },
     breakpoints: {
         1280: {
@@ -1097,6 +1182,7 @@ new Swiper('.last-added-swiper', {
         1024: {
             slidesPerView: 7,
             allowTouchMove: false,
+            dragSize: 200,
         },
         768: {
             slidesPerGroup: 3,
@@ -1140,7 +1226,7 @@ new Swiper('.popular-models__swiper', {
             slidesPerView: 4,
         },
         660: {
-            slidesPerView: 3.5,
+            slidesPerView: "auto",
             spaceBetween: 10,
         },
         560: {
@@ -1153,7 +1239,7 @@ new Swiper('.popular-models__swiper', {
         },
         // // when window width is >= 320px
         320: {
-            slidesPerView: 2.5,
+            slidesPerView: "auto",
             spaceBetween: 5,
         },
     },
@@ -1173,11 +1259,11 @@ new Swiper('.compare-interesting__swiper', {
     // slidesPerView: 4,
     breakpoints: {
         1200: {
-            slidesPerView: 4.5,
+            slidesPerView: 5,
             spaceBetween: 10,
         },
         1024: {
-            slidesPerView: 3.1,
+            slidesPerView: 3,
             spaceBetween: 10,
         },
         780: {
@@ -1185,7 +1271,7 @@ new Swiper('.compare-interesting__swiper', {
             spaceBetween: 13,
         },
         768: {
-            slidesPerView: 2.3,
+            slidesPerView: 2.2,
             spaceBetween: 13,
         },
         500: {
@@ -1204,14 +1290,19 @@ new Swiper('.compare-interesting__swiper', {
             slidesPerView: 1.5,
             spaceBetween: 7,
         },
+        385: {
+            slidesPerView: 1.1,
+            spaceBetween: 7,
+        },
         375: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.1,
             spaceBetween: 7,
         },
         340: {
             slidesPerView: 1.5,
         },
         320: {
+            spaceBetween: 7,
             slidesPerView: 1,
         },
     },
@@ -1528,3 +1619,6 @@ checkboxInputTrigger.forEach((el) => {
         });
     });
 });
+
+
+

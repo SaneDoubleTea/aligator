@@ -1,7 +1,7 @@
 .popular-models {
-    background: #f9f9f9;
+    background: #f2f2f2;
     border-radius: 20px;
-    padding: 21px 0px 25px 30px;
+    padding: 21px 0px 25px 15px;
     height: 523px;
     margin-bottom: 32px;
     width: 100%;
@@ -29,7 +29,6 @@
         height: 310px;
         padding: 0px 20px 16px;
         transition: all 0.3s;
-
         &:hover {
             .popular-models__card {
                 transform: scale(1.05);
@@ -70,7 +69,6 @@
         color: $dark;
     }
 
-
     .swiper-button-disabled {
         opacity: 0;
     }
@@ -99,7 +97,6 @@
         &:hover {
             width: 64px;
             height: 64px;
-
         }
     }
 
@@ -119,11 +116,14 @@
 
     &__btn-next {
         right: -1%;
-
     }
 
     &__slide {
         max-width: 225px !important;
+    }
+
+    &__swiper.swiper{
+        padding: 0 15px ;
     }
 
     &__swiper-wrapper {
@@ -161,5 +161,8 @@
                 }
             }
         }
+    }
+    &__title.gadgets__title{
+        padding-left: 15px;
     }
 }

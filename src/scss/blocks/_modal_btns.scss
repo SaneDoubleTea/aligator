@@ -1,0 +1,32 @@
+.modal__btns-main {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+
+
+    .modal__btn-switch {
+        border-radius: 11px;
+
+        &:hover {
+            background-color: #30ca51;
+
+
+            svg {
+                transition: all 0.3s ease-out;
+
+                path {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+    .modal__btns-main {
+        display: none;
+    }
+}

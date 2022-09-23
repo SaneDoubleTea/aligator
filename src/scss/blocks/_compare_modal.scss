@@ -16,6 +16,9 @@
         right: 29px;
         padding: 10px;
         background: transparent;
+		svg{
+			pointer-events: none;
+		}
     }
 
     &__item {
@@ -42,7 +45,7 @@
         margin-bottom: 15px;
         position: relative;
 
-        > svg {
+        >svg {
             position: absolute;
             left: 15px;
             margin-right: 11px;
@@ -54,6 +57,8 @@
             left: 0;
             width: 100%;
             // height: 30px;
+            max-height: 335px;
+            overflow-y: scroll;
             padding: 15px;
             border: 1px solid #00000010;
             background-color: #fff;
@@ -63,11 +68,41 @@
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.3s ease;
+
+            .compare-add-modal__product {
+                cursor: pointer;
+            }
+
+            .compare-add-modal__product-content {
+                text-align: left;
+            }
+
+            /* width */
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: 5px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+                width: 5px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #BFC7D2;
+                border-radius: 16.1279px;
+                width: 5px;
+            }
+
             &-active {
                 opacity: 1;
                 visibility: visible;
             }
-            > span {
+
+            >span {
+                display: none;
                 font-size: 13px;
                 color: $accent;
             }
@@ -87,12 +122,15 @@
         font-size: 13px;
         line-height: 16px;
         letter-spacing: -0.02em;
+
         &::-webkit-search-cancel-button {
             opacity: 0;
         }
+
         &::placeholder {
             color: #b1b1b1;
         }
+
         &:focus {
             background: #ffffff;
             border: 0.6px solid #30ca51;
@@ -125,7 +163,7 @@
         padding-bottom: 14px;
         border-bottom: 0.7px solid rgba(191, 199, 210, 0.6);
 
-        + .compare-add-modal__product {
+        +.compare-add-modal__product {
             margin-top: 11px;
         }
 
@@ -155,12 +193,21 @@
     &__del-btn {
         cursor: pointer;
         margin-left: auto;
+
+        svg {
+            &:hover {
+
+                path {
+                    fill: #30ca51;
+                }
+            }
+        }
     }
 
     &__dropdown {
         position: relative;
 
-        + .compare-add-modal__dropdown {
+        +.compare-add-modal__dropdown {
             margin-top: 18px;
         }
 
@@ -172,10 +219,12 @@
             height: 38px;
             padding: 10px 28px 10px 14px;
             background: #ffffff;
-            opacity: 0.5;
-            border: 0.6px solid #a2a2a2;
+            // opacity: 0.5;
+            border: 0.6px solid #a2a2a288;
             border-radius: 10px;
             transition: all 0.3s ease-out;
+				color: $dark;
+
 
             &:hover {
                 border: 1px solid #000000;
@@ -220,7 +269,7 @@
                 color: #30ca51;
             }
 
-            + .compare-add-modal__dropdown-item {
+            +.compare-add-modal__dropdown-item {
                 margin-top: 5px;
             }
         }
@@ -247,13 +296,11 @@
     }
 }
 
-
-
 .compare-window-modal {
+
     .accordion_compare-mobile,
     .compare-switches-mobile,
     .compare__table-wrapper {
         display: none;
     }
 }
-

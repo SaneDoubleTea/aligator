@@ -195,6 +195,7 @@
       align-items: stretch;
       gap: 5px;
       margin-bottom: 18px;
+      width: 45%;
    }
 
    &__title {
@@ -245,9 +246,10 @@
    &__slide {
       background: #fff;
    }
+   
 
    &__pagination {
-      width: 256px !important;
+      width: 180px !important;
       left: -6px !important;
       visibility: hidden;
       opacity: 0;
@@ -255,7 +257,7 @@
 
       span {
          transition: all 0.3s ease-in-out;
-         width: 56px;
+         width: 30px;
          height: 3px;
          background: #bfc7d2;
          opacity: 0.4;
@@ -265,17 +267,26 @@
 
       .swiper-pagination-bullet-active {
          transition: all 0.4s ease-in-out;
-         width: 56px;
+         width: 30px;
          height: 3px;
          background: #72777d;
          border-radius: 2px;
          opacity: 1;
       }
    }
+   &__slider{
+      &:hover{
+         .catalog-item__pagination{
+            visibility: visible;
+            opacity: 1;
+         }
+      }
+   }
 
    &__price-compare {
       position: absolute;
-      right: 100px;
+      right: 105px;
+      top: 45px;
    }
 
    &__price {
@@ -288,10 +299,12 @@
       span {
          font-size: 21px;
          line-height: 25px;
-
          &:first-child {
-            margin-right: 20px;
+            margin-right: 5px;
          }
+		 &:last-child {
+			margin-left: 5px;
+		 }
       }
    }
 
@@ -418,7 +431,7 @@
       margin-left: 40px;
       max-width: 292px;
       width: 100%;
-      margin-top: auto;
+      margin-top: 100px;
       border-top: 0.7px solid rgba(191, 199, 210, 0.7);
       position: relative;
 
@@ -463,18 +476,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 20px;
-      width: 20px;
-
+      height: 19px;
+      width: 19px;
+      cursor: pointer;
       &--active {
          border-radius: 50%;
          border: 2px solid #30CA51;
       }
+      
    }
 
    &__color-available {
       margin-left: auto;
       margin-right: 13px;
+      display: flex;
+      &--white{
+         border: 1px solid  #BFC7D2;
+         border-radius: 50%;
+      }
    }
 
    &__shop-decor {
@@ -508,7 +527,7 @@
 
 .catalog-item-flex {
    padding: 20px 24px 36px 14px;
-   max-width: 285px;
+   max-width: 270px;
    border: 0.7px solid rgba(191, 199, 210, 0.7);
    border-top: none;
    border-left: none;
@@ -568,6 +587,18 @@
       max-width: 280px;
       max-height: 280px;
       margin-right: 0;
+   }
+
+   .catalog-item__pagination {
+      width: 256px !important;
+
+      span {
+         width: 56px;
+      }
+
+      .swiper-pagination-bullet-active {
+         width: 56px;
+      }
    }
 
    .catalog-item__slider {

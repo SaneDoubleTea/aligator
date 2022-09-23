@@ -1,11 +1,10 @@
 .intro-swiper__swiper {
-    padding: 30px 80px !important;
+    padding: 30px 80px 15px !important;
 }
 
 .intro-swiper {
     position: relative;
-    margin-top: 30px;
-    padding-bottom: 15px;
+    // margin-top: 30px;
 
     &__wrapper {
         padding: 0 0 25px 0;
@@ -88,26 +87,60 @@
     &__item {
         position: relative;
         width: 100%;
-        height: 260px;
+        height: 240px;
         overflow: hidden;
         background: #d9d9d9;
         border-radius: 10px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
         transition: all 0.3s ease-out;
 
         &:hover {
             z-index: 4;
             transform: scale(1.05);
         }
-
-        &-1,
-        &-2 {
-            .intro-swiper-slide__title {
-                height: 90px;
-                font-size: 50px;
-                line-height: 90%;
-                bottom: 28px;
-                display: flex;
-                align-items: center;
+        &--darkblue {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(91, 104, 180, 0.4);
+            }
+        }
+        &--lilac {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(174, 121, 174, 0.4);
+            }
+        }
+        &--cornflower {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(48, 202, 202, 0.4);
+            }
+        }
+        &--black {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.4);
+            }
+        }
+        &--orange {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(253, 106, 67, 0.4);
+            }
+        }
+        &--green {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(48, 202, 81, 0.4);
+            }
+        }
+        &--blue {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(0, 133, 255, 0.4);
+            }
+        }
+        &--darkgrey {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(161, 161, 161, 0.4);
+            }
+        }
+        &--grey {
+            &:hover {
+                box-shadow: 0px 14px 44px rgba(134, 134, 134, .4);
             }
         }
 
@@ -145,10 +178,10 @@
         position: absolute;
         max-width: 250px;
         // bottom: 10%;
-        bottom: 39px;
+        bottom: 29px;
         left: 23px;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 30px;
         color: #ffffff;
         transition: all 0.3s ease-out;
     }

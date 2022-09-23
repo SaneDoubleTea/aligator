@@ -11,7 +11,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1425px;
     padding: 0 20px 0 30px;
 }
 
@@ -176,6 +176,10 @@ body {
         background-color: rgba(191, 199, 210, 0.11);
         border-radius: 2px;
     }
+
+    &-active {
+        color: #000 !important;
+    }
 }
 
 .filter-btn {
@@ -202,7 +206,7 @@ body {
         &::before {
             content: '';
             position: absolute;
-            background-image: url('../../img/icons/filter-btn.svg');
+            background-image: url('../img/icons/filter-btn.svg');
             background-repeat: no-repeat;
             background-size: cover;
             width: 28px;
@@ -288,7 +292,7 @@ body {
         &::after {
             content: '';
             position: absolute;
-            background-image: url('../../img/icons/arrow-down-grey.svg');
+            background-image: url('../img/icons/arrow-down-grey.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -402,7 +406,7 @@ body {
 }
 
 .intro__container {
-    max-width: 1600px;
+    max-width: 1550px;
     margin: 0 auto;
 }
 
@@ -479,4 +483,27 @@ body {
 @import 'blocks/footer';
 @import 'blocks/login-modal';
 @import 'blocks/item-view';
+@import 'blocks/modal_btns';
+
+.header_container {
+    width: 100%;
+    // margin: auto;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.svg-reverse{
+    transform: rotate(180deg);
+}
+html{
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 0 !important;
+        height: 0 !important;
+        display: none;
+    }
+
+}
+
 @import 'blocks/media';
